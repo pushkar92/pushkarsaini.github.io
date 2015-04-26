@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <title>Java Just</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="css/charisma-app.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+     <link rel="shortcut icon" href="img/logo.png">
+
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> 
+                <span>Java Just</span></a>
+
+
+
+            <!-- theme selector starts -->
+            <div class="btn-group pull-right theme-container animated tada">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-tint"></i><span
+                        class="hidden-sm hidden-xs"> Change Theme / Skin</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="themes">
+                    <li><a data-value="classic" href="#"><i class="whitespace"></i> Classic</a></li>
+                    <li><a data-value="cerulean" href="#"><i class="whitespace"></i> Cerulean</a></li>
+                    <li><a data-value="cyborg" href="#"><i class="whitespace"></i> Cyborg</a></li>
+                    <li><a data-value="simplex" href="#"><i class="whitespace"></i> Simplex</a></li>
+                    <li><a data-value="darkly" href="#"><i class="whitespace"></i> Darkly</a></li>
+                    <li><a data-value="lumen" href="#"><i class="whitespace"></i> Lumen</a></li>
+                    <li><a data-value="slate" href="#"><i class="whitespace"></i> Slate</a></li>
+                    <li><a data-value="spacelab" href="#"><i class="whitespace"></i> Spacelab</a></li>
+                    <li><a data-value="united" href="#"><i class="whitespace"></i> United</a></li>
+                </ul>
+            </div>
+            <!-- theme selector ends -->
+
+          
+
+        </div>
+    </div>
+    <!-- topbar ends -->
+<div class="ch-container">
+    <div class="row">
+        
+        <!-- left menu starts -->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                     <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">Main</li>
+                        <li><a class="ajax-link" href="introduction.html"><i class="glyphicon glyphicon-home"></i><span> Introduction to Java</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="data-type-literals.html"><i class="glyphicon glyphicon-eye-open"></i><span> Data Type and Literals</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="taking-input.html"><i class="glyphicon glyphicon-eye-open"></i><span> Taking input</span></a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <!-- left menu ends -->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!-- content starts -->
+
+
+
+
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2> Data Types and Literals </h2>
+            </div>
+           <div style="margin-left:5%;margin-top:2%;margin-bottom:2%;">
+                
+<p><b>Data Types in Java</b></p>
+
+<p><br />
+</p>
+
+<p>Integrals</p>
+
+<ul>
+<li><p>byte 1 byte</p>
+
+</li>
+<li><p>short 2 bytes</p>
+
+</li>
+<li><p>int 4 bytes</p>
+
+</li>
+<li><p>long 8 bytes</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p>Note: All are signed by default</p>
+
+<p><br />
+</p>
+
+<p>Floatings</p>
+
+<ul>
+<li><p>float 4 bytes</p>
+
+</li>
+<li><p>double 8 bytes</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p>Characters</p>
+
+<ul>
+<li><p>char 2 bytes (Unicode)</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p>Boolean</p>
+
+<ul>
+<li><p>boolean – 2 bytes (Java Black Book), undefined (Oracle)</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p>Resource: <a href="http://download.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">http://download.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html</a></p>
+
+<p><br />
+</p>
+
+<p><br />
+</p>
+
+<p><b>Providing data to variables</b></p>
+
+<p><br />
+</p>
+
+<ol> <li><p>Using Literals</p>
+
+</li>
+<li><p>Using Interactive Input</p>
+
+</li>
+<li><p>Using Command Line Input</p>
+
+</li>
+</ol><p><br />
+</p>
+
+<p><b>Literals</b></p>
+
+<p><br />
+</p>
+
+<p>The values that we use from our side for some expression or assignment are called as literals or constant values.</p>
+
+<p><br />
+</p>
+
+<p>Types of Literals</p>
+
+<p><br />
+</p>
+
+<ol> <li><p>Integral Literals</p>
+
+<ol> <li><p>Default is <b>int</b></p>
+
+</li>
+<li><p>Use l or L with long</p>
+
+<ol type="i"> <li><p>int num=6;</p>
+
+</li>
+<li><p>long p=7L;</p>
+
+</li>
+</ol> </li>
+</ol> </li>
+<li><p>Floating Literals</p>
+
+<ol> <li><p>Default is <b>double</b></p>
+
+</li>
+<li><p>Use f or F with float</p>
+
+<ol type="i"> <li><p>double x=5.6;</p>
+
+</li>
+<li><p>float y=4.5; //error</p>
+
+</li>
+<li><p>float y=4.5f; //correct</p>
+
+</li>
+</ol> </li>
+</ol> </li>
+<li><p>Characters Literals</p>
+
+<ol> <li><p>Enclosed in single codes</p>
+
+<ol type="i"> <li><p>char ch='A';</p>
+
+</li>
+</ol> </li>
+<li><p>Use Escape Characters as per needs</p>
+
+<ol type="i"> <li><p>\n New Line</p>
+
+</li>
+<li><p>\t Horizontal Tab</p>
+
+</li>
+<li><p>\" Print "</p>
+
+</li>
+<li><p>\\ Print \</p>
+
+</li>
+<li><p>\r Carriage Return</p>
+
+</li>
+</ol> </li>
+</ol> </li>
+</ol><p><br />
+</p>
+
+
+<p><br />
+</p>
+
+<p>Write the SOP statement to print the following</p>
+
+<p><br />
+</p>
+
+<p>He said "\n" is made for new line.</p>
+
+<p><br />
+</p>
+
+<p>Solution</p>
+
+<p>System.out.println("He said \"\\n\" is made for new line");</p>
+
+<p><br />
+</p>
+
+<ol start="4"> <li><p>String Literals</p>
+
+<ol> <li><p>Enclosed in double quotes</p>
+
+<ol type="i"> <li><p>String name="Rakesh";</p>
+
+</li>
+</ol> </li>
+<li><p>Managed by <b>String</b> class</p>
+
+</li>
+<li><p>No termination by null character</p>
+
+</li>
+</ol> </li>
+<li><p>Boolean literals</p>
+
+<ol> <li><p>Can have true or false only</p>
+
+</li>
+<li><p>boolean married=false;</p>
+
+</li>
+</ol> </li>
+</ol>
+    
+
+                    
+              
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- content ends -->
+    </div><!--/#content.col-md-0-->
+</div><!--/fluid-row-->
+
+
+
+    <hr>
+
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="js/charisma.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46662696-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

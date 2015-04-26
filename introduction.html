@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <title>Java Just</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="css/charisma-app.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+ <!-- The fav icon -->
+    <link rel="shortcut icon" href="img/logo.png">
+    
+
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> 
+                <span>Java Just</span></a>
+
+
+
+            <!-- theme selector starts -->
+            <div class="btn-group pull-right theme-container animated tada">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-tint"></i><span
+                        class="hidden-sm hidden-xs"> Change Theme / Skin</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="themes">
+                    <li><a data-value="classic" href="#"><i class="whitespace"></i> Classic</a></li>
+                    <li><a data-value="cerulean" href="#"><i class="whitespace"></i> Cerulean</a></li>
+                    <li><a data-value="cyborg" href="#"><i class="whitespace"></i> Cyborg</a></li>
+                    <li><a data-value="simplex" href="#"><i class="whitespace"></i> Simplex</a></li>
+                    <li><a data-value="darkly" href="#"><i class="whitespace"></i> Darkly</a></li>
+                    <li><a data-value="lumen" href="#"><i class="whitespace"></i> Lumen</a></li>
+                    <li><a data-value="slate" href="#"><i class="whitespace"></i> Slate</a></li>
+                    <li><a data-value="spacelab" href="#"><i class="whitespace"></i> Spacelab</a></li>
+                    <li><a data-value="united" href="#"><i class="whitespace"></i> United</a></li>
+                </ul>
+            </div>
+            <!-- theme selector ends -->
+
+          
+
+        </div>
+    </div>
+    <!-- topbar ends -->
+<div class="ch-container">
+    <div class="row">
+        
+        <!-- left menu starts -->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">Main</li>
+                        <li><a class="ajax-link" href="introduction.html"><i class="glyphicon glyphicon-home"></i><span> Introduction to Java</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="data-type-literals.html"><i class="glyphicon glyphicon-eye-open"></i><span> Data Type and Literals</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="taking-input.html"><i class="glyphicon glyphicon-eye-open"></i><span> Taking input</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <!-- left menu ends -->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!-- content starts -->
+
+
+
+
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2> Introduction to Java</h2>
+            </div>
+           <div style="margin-left:5%;margin-top:2%">
+                
+             
+                    
+                <p><b>What is Java?</b></p>
+
+<p><br />
+</p>
+
+<p>A technology from Sun developed by James Gosling in 1991 with initial name ‘Oak’ which was renamed to Java in 1995.</p>
+
+<p><br />
+</p>
+
+<p>It <gs id="77ff167d-7ebf-4c4f-8224-4fc3b43b2ef4" ginger_software_uiphraseguid="b523f95a-59e4-4291-8766-34f94979bb91" >is divided four</gs> core technologies</p>
+
+<ol> <li><p>Java Standard Edition (Java SE)</p>
+
+</li>
+<li><p>Java Enterprise Edition (Java EE)</p>
+
+</li>
+<li><p>Java Mobile Edition (Java ME)</p>
+
+</li>
+<li><p>Java <gs id="b4511b0f-3f30-470c-b5cb-0908a6fb5fa8" ginger_software_uiphraseguid="733f6cd1-c725-4cb4-b993-b3148ec1040d" >Fx</gs></p>
+
+</li>
+</ol><p><br />
+</p>
+
+<p><b>Requirements</b></p>
+
+<p><br />
+</p>
+
+<ol> <li><p>JDK (Java Development Kit)</p>
+
+</li>
+<li><p>JRE (Java Runtime Environment)</p>
+
+</li>
+<li><p>IDE (Integrated Development Environment)</p>
+
+<ol> <li><p>NetBeans</p>
+
+</li>
+<li><p>Eclipse</p>
+
+</li>
+<li><p>Visual Age</p>
+
+</li>
+<li><p>JDeveloper</p>
+
+</li>
+<li><p>Etc.</p>
+
+</li>
+</ol> </li>
+</ol><p><br />
+</p>
+
+<p><b>Features of Java</b></p>
+
+<p><br />
+</p>
+
+<ol> <li><p>Simple and Sober</p>
+
+</li>
+<li><p>Object Oriented</p>
+
+</li>
+<li><p>Portable</p>
+
+</li>
+<li><p>Platform Independent or Write Once Run Anywhere</p>
+
+</li>
+<li><p>Multi Threaded</p>
+
+</li>
+<li><p>Secure</p>
+
+</li>
+<li><p>Robust</p>
+
+<ol> <li><p>Java provides built-in tool called Garbage Collector to de-allocate un-used memory to avoid memory leakage</p>
+
+</li>
+<li><p>Java provides special classes called exception to exact report the problems in runtime.</p>
+
+</li>
+<li><p>Java provides a big set of classes called Java API for almost any purpose</p>
+
+</li>
+</ol> </li>
+</ol><p><br />
+</p>
+
+<p><br />
+</p>
+
+<p><b>Writing first Java Program</b></p>
+
+<p><br />
+</p>
+
+<ul>
+<li><p>A java program file must have <b>.java</b> extension</p>
+
+</li>
+<li><p>Every Java program must have some set of classes using <b>class</b> keyword</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p>class &lt;classname&gt;</p>
+
+<p>{</p>
+
+<p>//members</p>
+
+<p>}</p>
+
+<ul>
+<li><p>To create an execute class it must have an entry point main()</p>
+
+<ul>
+<li><p>public static void main(String args[])</p>
+
+</li>
+<li><p>public static void main(String… args)</p>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+<p><b>Syntactical Rules of Java</b></p>
+
+<p><br />
+</p>
+
+<ul>
+<li><p>All keywords and package names must be in lower case</p>
+
+</li>
+<li><p>All class names and interfaces must starts with capital letter</p>
+
+<ul>
+<li><p>Math</p>
+
+</li>
+<li><p>String</p>
+
+</li>
+<li><p>BufferedReader</p>
+
+</li>
+<li><p>InputStreamReader</p>
+
+</li>
+</ul>
+
+</li>
+<li><p>All field and methods starts with lower letter</p>
+
+<ul>
+<li><p>length()</p>
+
+</li>
+<li><p>readLine()</p>
+
+</li>
+<li><p>substring()</p>
+
+</li>
+<li><p>println()</p>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p><b>General Input/Output in Java</b></p>
+
+<p><br />
+</p>
+
+<p>Java provides built-in static objects under <b>System</b> class</p>
+
+<ul>
+<li><p>in</p>
+
+</li>
+<li><p>out</p>
+
+</li>
+<li><p>err</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p><b>in</b> refers to the standard input (keyboard)</p>
+
+<p><b>out</b> refers to the standard output (monitor) for general messages</p>
+
+<p><b>err</b> refers to the standard error (monitor) for error messages</p>
+
+<p><br />
+</p>
+
+<p><b>in</b> is a static object of <b>InputStream </b>class from <b>java.io</b> package</p>
+
+<p><b>out</b> and <b>err</b> are a static objects of <b>PrintStream </b>class from <b>java.io</b> package</p>
+
+<p><br />
+</p>
+
+<p><b>Methods of PrintStream class</b></p>
+
+<p><br />
+</p>
+
+<ul>
+<li><p>print()</p>
+
+</li>
+<li><p>println()</p>
+
+</li>
+<li><p>printf()</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p>//First.java</p>
+
+<p>class Test</p>
+
+<p>{</p>
+
+<p>public static void main(String... args)</p>
+
+<p>{</p>
+
+<p>int a=5,b=6;</p>
+
+<p>System.out.printf("Product of %d and %d is %d",a,b,a*b);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><br />
+</p>
+
+<p><b>Compiling a program</b></p>
+
+<p><br />
+</p>
+
+<p>JAVAC &lt;programname.java&gt;</p>
+
+<p><br />
+</p>
+
+<p>Example</p>
+
+<p>JAVAC First.java  Test.class</p>
+
+<p><b>Running a class</b></p>
+
+<p><br />
+</p>
+
+<p>JAVA Test</p>
+
+<p><br />
+</p>
+
+<p><br />
+</p>
+
+<p><b>What is PATH?</b></p>
+
+<p><br />
+</p>
+
+<p>An environmental variable to manage list of folders to lookup executable files (.exe, .com and .bat).</p>
+
+<p><br />
+</p>
+
+<p>To add a folder temporarily from command prompt issue the following command</p>
+
+<p><br />
+</p>
+
+<p>PATH=%PATH%;C:\Program Files\Java\jdk1.8.0\bin</p>
+
+<p><br />
+</p>
+
+
+<p>To make the permanent PATH setting use</p>
+
+<p><br />
+</p>
+
+<p>My Computer -> Properties -> Advanced -> Environmental Variables -> System Variables ->Path -> Edit</p>
+
+<p><br />
+</p>
+
+<p>Paste the path of your BIN after a semicolon</p>
+    
+
+                    
+              
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- content ends -->
+    </div><!--/#content.col-md-0-->
+</div><!--/fluid-row-->
+
+
+
+    <hr>
+
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="js/charisma.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46662696-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
