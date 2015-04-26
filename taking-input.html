@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <title>Java Just</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="css/charisma-app.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+   <link rel="shortcut icon" href="img/logo.png">  
+
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> 
+                <span>Java Just</span></a>
+
+
+
+            <!-- theme selector starts -->
+            <div class="btn-group pull-right theme-container animated tada">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-tint"></i><span
+                        class="hidden-sm hidden-xs"> Change Theme / Skin</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="themes">
+                    <li><a data-value="classic" href="#"><i class="whitespace"></i> Classic</a></li>
+                    <li><a data-value="cerulean" href="#"><i class="whitespace"></i> Cerulean</a></li>
+                    <li><a data-value="cyborg" href="#"><i class="whitespace"></i> Cyborg</a></li>
+                    <li><a data-value="simplex" href="#"><i class="whitespace"></i> Simplex</a></li>
+                    <li><a data-value="darkly" href="#"><i class="whitespace"></i> Darkly</a></li>
+                    <li><a data-value="lumen" href="#"><i class="whitespace"></i> Lumen</a></li>
+                    <li><a data-value="slate" href="#"><i class="whitespace"></i> Slate</a></li>
+                    <li><a data-value="spacelab" href="#"><i class="whitespace"></i> Spacelab</a></li>
+                    <li><a data-value="united" href="#"><i class="whitespace"></i> United</a></li>
+                </ul>
+            </div>
+            <!-- theme selector ends -->
+
+          
+
+        </div>
+    </div>
+    <!-- topbar ends -->
+<div class="ch-container">
+    <div class="row">
+        
+        <!-- left menu starts -->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                      <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">Main</li>
+                        <li><a class="ajax-link" href="introduction.html"><i class="glyphicon glyphicon-home"></i><span> Introduction to Java</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="data-type-literals.html"><i class="glyphicon glyphicon-eye-open"></i><span> Data Type and Literals</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="taking-input.html"><i class="glyphicon glyphicon-eye-open"></i><span> Taking input</span></a>
+                        </li>
+                    </ul>
+                    <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <!-- left menu ends -->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!-- content starts -->
+
+
+
+
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2> Taking input using Scanner class </h2>
+            </div>
+           <div style="margin-left:5%;margin-top:2%;margin-bottom:2%;">
+                
+<p><b>Interactive Input</b></p>
+
+<p><br />
+</p>
+
+<ul>
+<li><p>We can take the input from user using two ways</p>
+
+<ul>
+<li><p>Using <b>Scanner</b> class from <b><gs id="51a65cd9-78ec-48fe-99bd-ae05071befb7" ginger_software_uiphraseguid="bf8ffa4a-d4dc-4c88-8876-31642951bbee" >java</gs><gs id="cafe1435-d438-4bee-ac84-8aebe91055ff" ginger_software_uiphraseguid="bf8ffa4a-d4dc-4c88-8876-31642951bbee" >.</gs><gs id="480ab8e0-9611-4414-9cc5-cff1d0bf06ce" ginger_software_uiphraseguid="bf8ffa4a-d4dc-4c88-8876-31642951bbee" >util</gs></b> package</p>
+
+</li>
+<li><p>Using <b>BufferedReader</b> class from <b><gs id="56670673-524b-4f61-87a1-a611efb6bc4c" ginger_software_uiphraseguid="c21577a7-d97a-40fa-9cb8-8e5039bf51f4" >java</gs><gs id="cd73e3b2-7469-4fa9-9c15-79e9a041c1a2" ginger_software_uiphraseguid="c21577a7-d97a-40fa-9cb8-8e5039bf51f4" >.</gs><gs id="8ee75d86-6666-4136-bf25-be2f013bc176" ginger_software_uiphraseguid="c21577a7-d97a-40fa-9cb8-8e5039bf51f4" >io</gs></b> package<br />
+
+</p>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+    
+<p><b>Methods of Scanner class</b></p>
+
+<p><br />
+</p>
+
+<ul>
+<li><p>String next()</p>
+
+</li>
+<li><p>int nextInt()</p>
+
+</li>
+<li><p>double nextDouble()</p>
+
+</li>
+<li><p>float nextFloat()</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p>Example</p>
+
+<p>WAP to input name and age of a person and check it as valid voter.</p>
+
+<p><br />
+</p>
+
+<p>import java.util.Scanner;</p>
+
+<p>public class LiteralTest </p>
+
+<p>{</p>
+
+<p>public static void main(String args[])</p>
+
+<p>{</p>
+
+<p>Scanner sc=new Scanner(System.in);</p>
+
+<p>System.out.print("Enter Name : ");</p>
+
+<p>String name=sc.next();</p>
+
+<p>System.out.print("Age : ");</p>
+
+<p>int age=sc.nextInt();</p>
+
+<p>if(age&gt;=18)</p>
+
+<p>System.out.printf("Dear %s you can vote", name);</p>
+
+<p>else</p>
+
+<p>System.out.printf("Dear %s you cannot vote",name);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><br />
+</p>
+
+<p><br />
+</p>
+
+<p><br />
+</p>
+
+<p>WAP to get a name and basic of an employee and print DA based on following rules using ternary operator</p>
+
+<p>60% for basic&gt;=10000</p>
+
+<p>40% for basic&gt;=6000</p>
+
+<p>20% for others</p>
+
+<p><br />
+</p>
+
+<p><b>Ternary operator (?:)</b></p>
+
+<p><br />
+</p>
+
+<p>condition? true part : false part;</p>
+
+<p><br />
+</p>
+
+<p><b>Solution</b></p>
+
+<p><br />
+</p>
+
+<p>import java.util.*;</p>
+
+<p>class DAPrint</p>
+
+<p>{</p>
+
+<p>public static void main(String args[])</p>
+
+<p>{</p>
+
+<p>Scanner sc=new Scanner(System.in);</p>
+
+<p>System.out.print("Name : ");</p>
+
+<p>String name=sc.next();</p>
+
+<p><br />
+</p>
+
+<p>System.out.print("Basic : ");</p>
+
+<p>int basic=sc.nextInt();</p>
+
+<p><br />
+</p>
+
+<p>double da=basic&gt;=10000?0.6*basic : basic&gt;=6000?0.4*basic : 0.2*basic;</p>
+
+<p>System.out.println("Dear "+name+" your DA is "+da);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><br />
+</p>
+
+<p><br />
+</p>
+
+<p>WAP to get a number and its power and print number to the power.</p>
+
+<p><br />
+<
+/p> 
+<p>import java.util.Scanner;</p>
+
+<p>class PowerTest</p>
+
+<p>{</p>
+
+<p>public static void main(String... args)</p>
+
+<p>{</p>
+
+<p>Scanner sc=new Scanner(System.in);</p>
+
+<p>System.out.print("Number : ");</p>
+
+<p>double num=sc.nextDouble();</p>
+
+<p><br />
+</p>
+
+<p>System.out.print("Power : ");</p>
+
+<p>double p=sc.nextDouble(); //non-static or instance method</p>
+
+<p><br />
+</p>
+
+<p>double result=Math.pow(num,p); //static or class method</p>
+
+<p>System.out.printf("%.2f to the power %.2f is %.2f",num,p,result);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><b>Using </b>import static<b> keyword</b></p>
+
+<p><br />
+</p>
+
+<ul>
+<li><p>Used to import static members of a class</p>
+
+</li>
+</ul>
+
+<p><br />
+</p>
+
+<p><br />
+</p>
+
+<p>import static java.lang.System.*;</p>
+
+<p>import static java.lang.Math.*;</p>
+
+<p><br />
+</p>
+
+<p>Example<
+/p> 
+<p>import java.util.Scanner;</p>
+
+<p>import static java.lang.System.*;</p>
+
+<p>import static java.lang.Math.*;</p>
+
+<p>class ImportStaticTest</p>
+
+<p>{</p>
+
+<p>public static void main(String... args)</p>
+
+<p>{</p>
+
+<p>Scanner sc=new Scanner(in);</p>
+
+<p>out.print("Number : ");</p>
+
+<p>double num=sc.nextDouble();</p>
+
+<p><br />
+</p>
+
+<p>out.print("Power : ");</p>
+
+<p>double p=sc.nextDouble();</p>
+
+<p><br />
+</p>
+
+<p>double result=pow(num,p);</p>
+
+<p>out.printf("%.2f to the power %.2f is %.2f",num,p,result);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><br />
+</p>
+
+                    
+              
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- content ends -->
+    </div><!--/#content.col-md-0-->
+</div><!--/fluid-row-->
+
+
+
+    <hr>
+
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="js/charisma.js"></script>
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46662696-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
