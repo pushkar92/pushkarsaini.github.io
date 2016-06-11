@@ -1,5 +1,5 @@
 $(document).ready( function()
 {
-$(".description").accordion();
+$("#description").accordion();
 }
 );
