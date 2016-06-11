@@ -168,7 +168,23 @@ java programming language , java for beginners">
                 <h2><b><en>What is Inheritance ?</en></b></h2>
 
 <p><br />
-
+<p><span style="font-size: small; font-family: arial black,avant garde;">INHERITANCE is used to derive one class from another class.</span></p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">It provide re-usability of code.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">class A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // A is superclass or parent class or base class</span></p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">class B extends A&nbsp;&nbsp;&nbsp;&nbsp; // B is subclass or child class or derived class</span></p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">note : -&nbsp;&nbsp; 1. Java provide only single inheritance. </span></p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. All classes in Java are child of Object class.<br /></span></p>
+<p>&nbsp;</p>
+<p><em><span style="text-decoration: underline;"><span style="font-size: small; font-family: arial black,avant garde;">LET'S TAKE A LOOK AT PROGRAM </span></span></em></p>
+<p><em><span style="text-decoration: underline;"><span style="font-size: small; font-family: arial black,avant garde;">( read comments in the program for better understanding. )</span></span></em></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small; font-family: arial black,avant garde;">class ParentA<br />{<br />&nbsp;&nbsp;&nbsp; int i = 10;<br />&nbsp;&nbsp;&nbsp; int xyz=70;<br />&nbsp;&nbsp;&nbsp; public void printNames()<br />&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;System.out.println("Saini " +i);<br />&nbsp;&nbsp;&nbsp; }<br />}<br />&nbsp;<br />class ChildB extends ParentA<br />{<br />&nbsp;&nbsp; &nbsp;//Override<br />&nbsp;&nbsp;&nbsp; public int i = 20;<br />&nbsp;&nbsp;&nbsp; public int j=100;<br />&nbsp;&nbsp;&nbsp; public void printNames()<br />&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;System.out.println("Poornima "+i);<br />&nbsp;&nbsp;&nbsp; }<br />}<br />&nbsp;<br /><br /><br />public class MainClass<br />{<br />&nbsp;&nbsp; &nbsp;<br />&nbsp;&nbsp; &nbsp;<br />&nbsp;&nbsp; &nbsp;//Rule 1 : A parent can hold reference to its child<br />&nbsp;&nbsp; &nbsp;//Rule 2 : But a parent can access only those elements that are inherited from it.<br />&nbsp;&nbsp; &nbsp;//Rule 3 : The overridden method will be called from Parent's reference.<br />&nbsp;&nbsp; &nbsp;//Rule 4 : Cannot reduce the visiblity or scope of the inherited method from Parent class<br />&nbsp;&nbsp; &nbsp;// Rule 3 and Rule 4 are for methods only<br />&nbsp;&nbsp; &nbsp;// We use extend keyword to inherit a class<br />&nbsp;&nbsp;&nbsp; public static void main(String[] args)<br />&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;ParentA a = new ParentA();<br />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;ChildB b=new ChildB();<br />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;ParentA c=new ChildB();<br />&nbsp;&nbsp;&nbsp; //Reference=Instance<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Parent i value is "+a.i);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Child i value is "+b.i);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Child i value with Parent reference is "+c.i);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c.printNames();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />&nbsp;&nbsp;&nbsp; }<br /><br />}</span></p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-size: small; font-family: arial black,avant garde;">OUTPUT IS : - &gt;</span></span></p>
+<p><span style="text-decoration: underline;"><span style="font-size: small; font-family: arial black,avant garde;"><br /></span></span><span style="font-size: small; font-family: arial black,avant garde;">Parent i value is 10<br />Child i value is 20<br />Child i value with Parent reference is 10<br />Poornima 20</span></p>
 
 
 
