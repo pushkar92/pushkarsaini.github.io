@@ -181,13 +181,33 @@ java programming language , java for beginners">
         <div class="box-inner">
             <div class="box-header well">
 <h2><B><EN>POLYMORPHISM</EN></B></h2>
+</div>
+<p><br /></p>
+<p><br /></p>
 <p><span style="font-size: small; font-family: arial black,avant garde;">POLYMORPHISM&nbsp; -&gt; A concept which allows to perform more than one operations by an item. </span></p>
 <p><span style="font-size: small; font-family: arial black,avant garde;">It get implemented using overloading.<br /><br />
 Java allows only method overloading.<br /><br />Multiple methods having the same name but different number of arguments or type of<br /><br />
 arguments is called as method overloading.<br /><br />Return type do not participate in method overloading.</span></p>
 
 
-
+<p><span style="text-decoration: underline;"><span style="font-size: medium; font-family: arial black,avant garde;">
+    EXAMPLE :-</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium; font-family: arial black,avant garde;">
+    Create a class Maths having a field as num. Create a constructor to initialize the field<br /><br />
+    num. Create a method factorial() of num.<br /><br />
+    Create another method as factorial() which take a number as argument and returns the<br /><br />
+    factorial of that number.</span></p>
+<p><span style="font-size: medium; font-family: arial black,avant garde;"><em>
+    <span style="text-decoration: underline;">&lt;PROGRAM&gt;</span></em><br /><br />
+    class Maths<br /><br />{<br /><br />private int num;<br /><br />public Maths(int num)<br /><br />
+    {<br /><br />this.num=num;<br /><br />}<br /><br />public long factorial()<br /><br />{<br />
+<br />long f=1;<br /><br />for(int i=1;i&amp;lt;=num;i++)<br /><br />f=f*i;<br /><br />
+return f;<br /><br />}<br /><br />public static long factorial(int n) //method overloading<br /><br />
+{<br /><br />if(n==1)<br /><br />return 1;<br /><br />else<br /><br />return n*factorial(n-1);<br />
+<br />}<br /><br />}<br /><br />class MethodOverloadingTest<br /><br />{<br /><br />
+public static void main(String args[])<br /><br />{<br /><br />Maths m=new Maths(5);<br /><br />
+System.out.println(m.factorial());<br /><br />System.out.println(Maths.factorial(7));<br /><br />}<br /><br />}</span></p>
 
 
 
