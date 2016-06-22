@@ -8,10 +8,8 @@
     <meta charset="utf-8">
     <title>Java Just</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="learn java just in time and get through java
-    interview questions and answers.Java programming language questions for practise.">
-<meta name="keywords" content="learn java , java tutorial , java interview questions and answers,
-java programming language , java for beginners">
+    <meta name="description" content="">
+<meta name="keywords" content=" What are abstract methods ? , what is interface ? , power of interface , real application of interface">
 <meta name="author" content="Pushkar and Poornima">
     <style>
 .button {
@@ -129,6 +127,8 @@ java programming language , java for beginners">
 </li>
 <li><a class="ajax-link" href="inheritance.html"><i class="glyphicon glyphicon-eye-open"></i><span>Inheritance </span></a>
 </li>
+<li><a class="ajax-link" href="abstract.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Abstraction </span></a>
+</li>
 <li><a class="ajax-link" href="poly.html"><i class="glyphicon glyphicon-eye-open"></i><span>Polymorphism </span></a>
 <li><a class="ajax-link" href="javaques.html"><i class="glyphicon glyphicon-eye-open"></i><span>
 	Java questions and answers </span></a>
@@ -164,10 +164,47 @@ java programming language , java for beginners">
                 
              
                     
-                
+               <p><br /></p>
 
-<p><br /></p>
+<p><strong><span style="font-size:20px;">Abstraction means representation of essential features without including the background details.</span></strong></p>
 
+<p style="text-align: center;"><u><strong><span style="font-size:20px;"><span style="background-color:#00FFFF;">ABSTRACT METHODS</span></span></strong></u></p>
+
+<p><span style="font-size:20px;"><strong>-&gt; Abstract methods do not contain the body / definition , they have just signature.</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>-&gt; Abstract methods act as placeholders for methods that are implemented in the sublasses.</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>You will encounter abstract methods most commonly in interfaces.</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>public abstract String getDescription();</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>// no implemention or body required</strong></span></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align: center;"><span style="font-size:18px;"><strong><span style="background-color:#00FFFF;">ABSTRACT CLASSES</span></strong></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:20px;"><strong>An abstract class is the one that defines an interface but does not neccessarily provide implementations for all its member functions.</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>An abstract class is meant to be used as superclass from which other classes are derived.The derived class is expected to provide implementations for member functions that are not implemented in the superclass.</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>CONCRETE CLASS -&gt; A derived class that implements all the missing functionality is called concrete class. A concrete class derives from its abstract class.</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>abstract class Person</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>{</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public abstract String getDescription();</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>}</strong></span></p>
+
+<p><span style="font-size:20px;"><strong>A class with one or more abstract methods must itself be declared abstract.</strong></span></p>
+
+<p><span style="font-size:20px;"><span style="font-size:20px;"><strong>A class can even be declared as abstract even though it has no abstract methods.</strong></span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-size:20px;"><strong>Abstract classes cannot be instantiated. That means, if a class is declared as abstract , no objects of that class can be created.</strong></span></span></p>
 
 
 
