@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>Java Just in Time</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" Polymorphism is a concept which allows to perform more than one operations by an item.">
+<meta name="keywords" content="what is polymorphism , polymorphism , method overloading , constructor overloading">
+<meta name="author" content="Pushkar and Poornima">
+
+    <style>
+   .appear
+   {
+    font-family: Arial black;
+    font-size: 16%;
+    background-color: #C0C0C0;
+    margin: 10px;
+    padding: 10px;
+    border: 20px;
+    text-align: center;
+    color: white;
+   }
+   
+.button {
+    background-color: #00CED1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:center ;
+}
+.pos{
+ left: 2000px ;
+}
+.posit{
+ left: 3000px;
+}
+</style>
+
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="css/charisma-app.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+ <!-- The fav icon -->
+    <link rel="shortcut icon" href="img/logo.png">
+    <script type = "text/javascipt" src="accordion.js" ></script>
+
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> 
+                <span>Java Just</span></a>
+
+
+
+            <!-- theme selector starts -->
+            <div class="btn-group pull-right theme-container animated tada">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i class="glyphicon glyphicon-tint"></i><span
+                        class="hidden-sm hidden-xs"> Change Theme / Skin</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="themes">
+                    <li><a data-value="classic" href="#"><i class="whitespace"></i> Classic</a></li>
+                    <li><a data-value="cerulean" href="#"><i class="whitespace"></i> Cerulean</a></li>
+                    <li><a data-value="cyborg" href="#"><i class="whitespace"></i> Cyborg</a></li>
+                    <li><a data-value="simplex" href="#"><i class="whitespace"></i> Simplex</a></li>
+                    <li><a data-value="darkly" href="#"><i class="whitespace"></i> Darkly</a></li>
+                    <li><a data-value="lumen" href="#"><i class="whitespace"></i> Lumen</a></li>
+                    <li><a data-value="slate" href="#"><i class="whitespace"></i> Slate</a></li>
+                    <li><a data-value="spacelab" href="#"><i class="whitespace"></i> Spacelab</a></li>
+                    <li><a data-value="united" href="#"><i class="whitespace"></i> United</a></li>
+                </ul>
+            </div>
+            <!-- theme selector ends -->
+
+          
+
+        </div>
+    </div>
+    <!-- topbar ends -->
+<div class="ch-container">
+    <div class="row">
+        
+        <!-- left menu starts -->
+        <div class="col-sm-2 col-lg-2">
+            <div class="sidebar-nav">
+                <div class="nav-canvas">
+                    <div class="nav-sm nav nav-stacked">
+
+                    </div>
+                    <ul class="nav nav-pills nav-stacked main-menu">
+                        <li class="nav-header">Main</li>
+                        <li><a class="ajax-link" href="introduction.html"><i class="glyphicon glyphicon-home"></i><span> Introduction to Java</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="data-type-literals.html"><i class="glyphicon glyphicon-eye-open"></i><span> Data Type and Literals</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="taking-input.html"><i class="glyphicon glyphicon-eye-open"></i><span> Taking input</span></a>
+                        </li>
+                        <li><a class="ajax-link" href="conditional.html"><i class="glyphicon glyphicon-eye-open"></i><span>Conditional statements </span></a>
+</li>
+<li><a class="ajax-link" href="loops.html"><i class="glyphicon glyphicon-eye-open"></i><span>Loops and Switch statements</span></a>
+</li>
+                        <li><a class="ajax-link" href="array.html"><i class="glyphicon glyphicon-eye-open"></i><span>Arrays</span></a>
+</li>
+<li class="accordion">
+                            <a href="#"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> OOPS</span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                           
+<li><a class="ajax-link" href="oops.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Concept of OOPS </span></a>
+</li>
+<li><a class="ajax-link" href="inheritance.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Inheritance </span></a>
+</li>
+<li><a class="ajax-link" href="abstract.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Abstraction </span></a>
+</li>
+<li><a class="ajax-link" href="poly.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Polymorphism </span></a>
+</li>
+</ul>
+ <li><a class="ajax-link" href="exception.html"><i class="glyphicon glyphicon-eye-open"></i><span>Exception Handling</span></a>
+</li>
+                                                <li><a class="ajax-link" href="javaques.html"><i class="glyphicon glyphicon-eye-open"></i><span> Java Interview Questions And Answers</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/span-->
+        <!-- left menu ends -->
+
+        <noscript>
+            <div class="alert alert-block col-md-12">
+                <h4 class="alert-heading">Warning!</h4>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <div id="content" class="col-lg-10 col-sm-10">
+            <!-- content starts -->
+
+
+
+
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+
+<p>
+	<strong><u>Understanding C++ in 30 minutes (Migration from C to CPP/C++)</u></strong>
+	<strong><u></u></strong>
+</p>
+<p>
+	<strong></strong>
+</p>
+</br></br>
+<p>
+The major problem B.Tech student faces during the time of interview is clear understanding of C++.	<strong>Even if they have good knowledge of C and perform well in it, lack of C++ understanding can ruin their interview</strong>. They don't have time to
+	learn C++ when companies start coming. So here I am trying to make their learning of C++ easy in very short time, assuming they have understanding of basic
+	C concepts and syntax knowledge. This will also help you to answer question related to difference in C and C++
+</p>
+<ol start="1" type="1">
+	<li>
+		C++ provides built-in objects for general input/output operations without using any format specifier (%d, %f in printf, scanf functions are not needed
+		yay! )
+	</li>
+	<ol start="1" type="a">
+		<li>
+			cin -- keyboard
+		</li>
+		<li>
+			cout - monitor (standard messages)
+		</li>
+		<li>
+			cerr -- monitor (error message)
+		</li>
+	</ol>
+	<li>
+		Such objects are available inside <strong><em>iostream.h</em></strong> header file
+	</li>
+	<li>
+		Use special operators &lt;&lt; (Extraction Operator) and &gt;&gt; (Insertion operator)
+	</li>
+	<li>
+		Use file extension as .cpp
+	</li>
+</ol>
+<p>
+	Let us understand these basics by few examples below
+</p>
+
+<p>
+	<strong>Program that takes name and age of a person as input and check whether the person is eligible to be vote or not </strong>
+</p>
+
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:100%;"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #557799">#include&lt;iostream.h&gt; </span><span style="color: #888888">//Needed for cin and cout objects</span>
+<span style="color: #557799">#include&lt;conio.h&gt; </span><span style="color: #888888">// Needed for clrscr() function</span>
+
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span>()
+{
+	<span style="color: #333399; font-weight: bold">char</span> name[<span style="color: #0000DD; font-weight: bold">51</span>];
+	<span style="color: #333399; font-weight: bold">int</span> age;
+	clrscr();
+
+	cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Enter your name : &quot;</span>; <span style="color: #888888">// Note use of extraction operator.</span>
+	cin <span style="color: #333333">&gt;&gt;</span> name;
+	cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Age &quot;</span>;
+	cin <span style="color: #333333">&gt;&gt;</span> age; <span style="color: #888888">// %d is not needed like scanf</span>
+
+	<span style="color: #008800; font-weight: bold">if</span>(age<span style="color: #333333">&gt;=</span><span style="color: #0000DD; font-weight: bold">18</span>)
+		cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Dear &quot;</span> <span style="color: #333333">&lt;&lt;</span> name <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; you can vote&quot;</span>;
+	<span style="color: #008800; font-weight: bold">else</span>
+		cout <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot;Dear &quot;</span> <span style="color: #333333">&lt;&lt;</span> name <span style="color: #333333">&lt;&lt;</span> <span style="background-color: #fff0f0">&quot; you cannot vote&quot;</span>;
+}
+</pre></td></tr></table></div>
+<br><br>
+
+<ol start="5" type="5">
+	<li>
+		C++ allows to create two or more functions with the same name. The functions must have different number of arguments or type of argument.(That's
+		polymorphism one of the OOP feature, C++ is object oriented, whereas C is not )
+	</li>
+</ol>
+
+
+
+<br><br>
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:100%;"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #60a0b0; font-style: italic">// A simple program to calculate area that show use of polymorphism with multiple area functions</span>
+
+<span style="color: #007020">#include&lt;conio.h&gt;</span>
+<span style="color: #007020">#include&lt;iostream.h&gt;</span>
+
+<span style="color: #902000">void</span> <span style="color: #06287e">area</span>(<span style="color: #902000">int</span> side)  <span style="color: #60a0b0; font-style: italic">// Parameter type integer</span>
+{
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Area of square is &quot;</span> <span style="color: #666666">&lt;&lt;</span> side<span style="color: #666666">*</span>side <span style="color: #666666">&lt;&lt;</span> endl; <span style="color: #60a0b0; font-style: italic">// End of the line makes other output to start from next line</span>
+}
+
+<span style="color: #902000">void</span> <span style="color: #06287e">area</span>(<span style="color: #902000">double</span> r)  <span style="color: #60a0b0; font-style: italic">// Parameter type double</span>
+{
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Area of circle is &quot;</span> <span style="color: #666666">&lt;&lt;</span> <span style="color: #40a070">3.14</span><span style="color: #666666">*</span>r<span style="color: #666666">*</span>r <span style="color: #666666">&lt;&lt;</span> endl;
+}
+
+<span style="color: #902000">void</span> <span style="color: #06287e">area</span>(<span style="color: #902000">int</span> l, <span style="color: #902000">int</span> w)  <span style="color: #60a0b0; font-style: italic">//There are two parameters</span>
+{
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Area of rectangle is &quot;</span> <span style="color: #666666">&lt;&lt;</span> l<span style="color: #666666">*</span>w;
+}
+
+<span style="color: #902000">void</span> <span style="color: #06287e">main</span>()
+{
+	clrscr();
+	area(<span style="color: #40a070">5</span>);
+	area(<span style="color: #40a070">4.7</span>);
+	area(<span style="color: #40a070">4</span>,<span style="color: #40a070">9</span>);
+<span style="color: #60a0b0; font-style: italic">// Return types does not make difference only parameter type or number of parameter unique combinations do.</span>
+}
+</pre></td></tr></table></div>
+
+
+<br><br>
+
+<ol start="6" type="6">
+	<li>
+		Functions in C++ allows default arguments. Let's see another example to understand this
+	</li>
+</ol>
+
+<br>
+
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:100%;"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020">#include&lt;conio.h&gt;</span>
+<span style="color: #007020">#include&lt;iostream.h&gt;</span>
+
+<span style="color: #902000">void</span> <span style="color: #06287e">area</span>(<span style="color: #902000">int</span> l<span style="color: #666666">=</span><span style="color: #40a070">5</span>, <span style="color: #902000">int</span> w<span style="color: #666666">=</span><span style="color: #40a070">6</span>) <span style="color: #60a0b0; font-style: italic">// Default values incase they are not provided, so it makes three combinatins</span>
+{
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Area of rectangle is &quot;</span> <span style="color: #666666">&lt;&lt;</span> l<span style="color: #666666">*</span>w;
+}
+<span style="color: #902000">void</span> <span style="color: #06287e">main</span>()
+{
+	clrscr();
+<span style="color: #60a0b0; font-style: italic">// Three combinations by which we can call above methods</span>
+	area();
+	area(<span style="color: #40a070">9</span>);
+	area(<span style="color: #40a070">4</span>,<span style="color: #40a070">9</span>);
+}
+</pre></td></tr></table></div>
+
+
+ 
+<br><br>
+
+<ol start="7" type="7">
+	<li>
+		 In C++, structures and unions are true data types. No typedef required to remove structure keyword from declarations.
+	</li>
+</ol>
+
+<br>
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:100%;"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020">#include&lt;conio.h&gt;</span>
+<span style="color: #007020">#include&lt;iostream.h&gt;</span>
+<span style="color: #007020">#include&lt;stdio.h&gt;</span>
+<span style="color: #007020; font-weight: bold">struct</span> book
+{
+	<span style="color: #902000">int</span> bookno;
+	<span style="color: #902000">char</span> title[<span style="color: #40a070">50</span>];
+	<span style="color: #902000">int</span> price;
+};
+<span style="color: #902000">void</span> <span style="color: #06287e">main</span>()
+{
+	book b;
+	clrscr();
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Book No : &quot;</span>;
+	cin <span style="color: #666666">&gt;&gt;</span> b.bookno;
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Title : &quot;</span>;
+	cin<span style="color: #666666">&gt;&gt;</span>b.title;	
+<span style="color: #60a0b0; font-style: italic">//gets(b.title);</span>
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Price : &quot;</span>;
+	cin <span style="color: #666666">&gt;&gt;</span> b.price;
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Book No is :&quot;</span> <span style="color: #666666">&lt;&lt;</span> b.bookno <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;, Title is &quot;</span> <span style="color: #666666">&lt;&lt;</span> b.title;
+}
+</pre></td></tr></table></div>
+
+
+<br><br>
+
+<ol start="8" type="8">
+	<li>
+			Anywhere declaration of variables
+			</li><li>C++ allows to create functions inside the structures
+
+	</li>
+</ol>
+
+<br>
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:100%;"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020">#include&lt;iostream.h&gt;</span>
+<span style="color: #007020">#include&lt;conio.h&gt;</span>
+<span style="color: #007020; font-weight: bold">struct</span> number
+{
+	<span style="color: #902000">int</span> n;
+	<span style="color: #902000">void</span> <span style="color: #06287e">square</span>()
+	{
+		cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Square of &quot;</span> <span style="color: #666666">&lt;&lt;</span> n <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot; is &quot;</span> <span style="color: #666666">&lt;&lt;</span> n<span style="color: #666666">*</span>n <span style="color: #666666">&lt;&lt;</span> endl;
+	}
+	<span style="color: #902000">void</span> <span style="color: #06287e">cube</span>()
+	{
+		cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Square of &quot;</span> <span style="color: #666666">&lt;&lt;</span> n <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot; is &quot;</span> <span style="color: #666666">&lt;&lt;</span> n<span style="color: #666666">*</span>n<span style="color: #666666">*</span>n <span style="color: #666666">&lt;&lt;</span> endl;
+	}
+
+};
+<span style="color: #902000">void</span> <span style="color: #06287e">main</span>()
+{
+	clrscr();
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Enter two numbers : &quot;</span>;
+	number x;
+	number y;
+	cin <span style="color: #666666">&gt;&gt;</span> x.n <span style="color: #666666">&gt;&gt;</span> y.n;
+	x.square();
+	x.cube();
+	y.square();
+	y.cube();
+}
+</pre></td></tr></table></div>
+
+<br>
+
+I guess now you have little more confidence on C++. C++ is superset of C. After reading this small crisp tutorial you will be able to answer common interview question "What is the difference between C and C++ ?".
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- content ends -->
+    </div><!--/#content.col-md-0-->
+</div><!--/fluid-row-->
+
+	
+
+    <hr>
+
+
+</div><!--/.fluid-container-->
+
+
+
+<!-- external javascript -->
+
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="js/charisma.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46662696-2', 'auto');
+  ga('send', 'pageview');
+</script>
+ 
+</body>
+</html>
