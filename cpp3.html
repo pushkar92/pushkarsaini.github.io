@@ -2,18 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-    
-    
-    
-    <meta charset="utf-8">
-    <title>Java Just</title>
+<meta charset="utf-8">
+    <title>Java Just in Time</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Conditional statements are the statements that check the condition specified and execute the code only if condition specified is true.">
-<meta name="keywords" content="conditional statements , what are conditional statements , what is if else statements , what are nested if else statements   ,learn java , java tutorial , java interview questions and answers,
-java programming language , java for beginners ">
+    <meta name="description" content=" Polymorphism is a concept which allows to perform more than one operations by an item.">
+<meta name="keywords" content="what is polymorphism , polymorphism , method overloading , constructor overloading">
 <meta name="author" content="Sandhya and Poornima">
+
     <style>
+   .appear
+   {
+    font-family: Arial black;
+    font-size: 16%;
+    background-color: #C0C0C0;
+    margin: 10px;
+    padding: 10px;
+    border: 20px;
+    text-align: center;
+    color: white;
+   }
+   
 .button {
     background-color: #00CED1;
     border: none;
@@ -26,6 +34,12 @@ java programming language , java for beginners ">
     margin: 4px 2px;
     cursor: pointer;
     position:center ;
+}
+.pos{
+ left: 2000px ;
+}
+.posit{
+ left: 3000px;
 }
 </style>
 
@@ -55,7 +69,7 @@ java programming language , java for beginners ">
     <![endif]-->
  <!-- The fav icon -->
     <link rel="shortcut icon" href="img/logo.png">
-    
+    <script type = "text/javascipt" src="accordion.js" ></script>
 
 </head>
 
@@ -119,17 +133,15 @@ java programming language , java for beginners ">
                         </li>
                         <li><a class="ajax-link" href="taking-input.html"><i class="glyphicon glyphicon-eye-open"></i><span> Taking input</span></a>
                         </li>
-                        
                         <li><a class="ajax-link" href="conditional.html"><i class="glyphicon glyphicon-eye-open"></i><span>Conditional statements </span></a>
 </li>
 <li><a class="ajax-link" href="loops.html"><i class="glyphicon glyphicon-eye-open"></i><span>Loops and Switch statements</span></a>
 </li>
                         <li><a class="ajax-link" href="array.html"><i class="glyphicon glyphicon-eye-open"></i><span>Arrays</span></a>
 </li>
-
 <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> OOPS</span></a>
-                            <ul class="nav nav-pills nav-stacked  smart">
+                            <ul class="nav nav-pills nav-stacked">
                            
 <li><a class="ajax-link" href="oops.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Concept of OOPS </span></a>
 </li>
@@ -142,13 +154,9 @@ java programming language , java for beginners ">
 </ul>
  <li><a class="ajax-link" href="exception.html"><i class="glyphicon glyphicon-eye-open"></i><span>Exception Handling</span></a>
 </li>
- <li><a class="ajax-link" href="javaques.html"><i class="glyphicon glyphicon-eye-open"></i><span> Java Interview Questions And Answers</span></a>
-</li>
-
-
-
-
-                </ul>
+                                                <li><a class="ajax-link" href="javaques.html"><i class="glyphicon glyphicon-eye-open"></i><span> Java Interview Questions And Answers</span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -174,80 +182,124 @@ java programming language , java for beginners ">
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2>  CONDITIONAL STATEMENTS  </h2>
+
+
+<p><strong>Types of members inside a class</strong></p>
+<p>&nbsp;</p>
+<ul>
+<li>The class can have two kind of members
+<ul>
+<li>Static or Class Members</li>
+<li>Non-Static or instance member</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>Class members are shared members that anybody can access using the class name and do not require an object. Use <strong>static</strong> keyword to declare such members. Use scope resolution operator&nbsp; (::) to access such members.&nbsp;</p>
+<p>Non-static or instance members always need an object to call them using dot operator (.)</p>
+<p>All class or static members are stored in heap memory. Note that all objects are also stored in heap memory. On the other hand all the non-static or instance members and functions are stored in stack memory</p>
+<p>&nbsp;</p>
+<p>We will understand this by an example. Let&rsquo;s create a class num2 having two fields a and b, also a constructor to initialize these fields and &nbsp;a method as product() which returns product of a and b. Let&rsquo;s also create another method as factorial() which takes a number as argument and returns the factorial of that number.</p>
+<p>&nbsp;</p>
+
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:100%"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020">#include&lt;iostream.h&gt; </span><span style="color: #60a0b0; font-style: italic">// For input/output operations</span>
+<span style="color: #007020">#include&lt;conio.h&gt; </span><span style="color: #60a0b0; font-style: italic">// For clrscr() function</span>
+<span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">num2</span> <span style="color: #60a0b0; font-style: italic">// We declare a class with name “num2”</span>
+{
+	<span style="color: #902000">int</span> a,b;
+	<span style="color: #002070; font-weight: bold">public:</span> <span style="color: #60a0b0; font-style: italic">// Access Modifier</span>
+		num2(<span style="color: #902000">int</span> a, <span style="color: #902000">int</span> b) <span style="color: #60a0b0; font-style: italic">// Now there are two variables with name a &amp; b</span>
+		{
+		    <span style="color: #007020; font-weight: bold">this</span><span style="color: #666666">-&gt;</span>a<span style="color: #666666">=</span>a; <span style="color: #60a0b0; font-style: italic">// Note the usage of this right hand ‘a’ is member of method</span>
+		    <span style="color: #007020; font-weight: bold">this</span><span style="color: #666666">-&gt;</span>b<span style="color: #666666">=</span>b; <span style="color: #60a0b0; font-style: italic">// this keyword ensures b is topmost class scope member</span>
+		}
+		<span style="color: #902000">int</span> product()
+		{
+			<span style="color: #007020; font-weight: bold">return</span> a<span style="color: #666666">*</span>b; <span style="color: #60a0b0; font-style: italic">// this is not needed as ‘a’ and ‘b’ are only one member</span>
+		}
+		<span style="color: #007020; font-weight: bold">static</span>  <span style="color: #902000">long</span> factorial(<span style="color: #902000">int</span> n)
+		{
+		       <span style="color: #007020; font-weight: bold">if</span>(n<span style="color: #666666">==</span><span style="color: #40a070">1</span>)
+				<span style="color: #007020; font-weight: bold">return</span> <span style="color: #40a070">1</span>;
+		       <span style="color: #007020; font-weight: bold">else</span>
+				<span style="color: #007020; font-weight: bold">return</span> n<span style="color: #666666">*</span><span style="color: #06287e">factorial</span>(n<span style="color: #666666">-</span><span style="color: #40a070">1</span>); <span style="color: #60a0b0; font-style: italic">// Remember recursion famous example ? </span>
+		}
+};
+<span style="color: #902000">void</span> <span style="color: #06287e">main</span>()
+{
+	num2 p(<span style="color: #40a070">4</span>,<span style="color: #40a070">5</span>),q(<span style="color: #40a070">5</span>,<span style="color: #40a070">7</span>);
+	clrscr();
+	cout <span style="color: #666666">&lt;&lt;</span> p.product() <span style="color: #666666">&lt;&lt;</span> endl;
+	cout <span style="color: #666666">&lt;&lt;</span> q.product() <span style="color: #666666">&lt;&lt;</span> endl;
+
+	cout <span style="color: #666666">&lt;&lt;</span> num2<span style="color: #666666">::</span>factorial(<span style="color: #40a070">6</span>); <span style="color: #60a0b0; font-style: italic">// :: is scope resolution operator</span>
+}
+</pre></td></tr></table></div>
+<p>&nbsp;</p>
+
+<p><strong>Using this pointer</strong></p>
+<ul>
+<li>this pointer refers the <strong><em>current object</em></strong> of a class</li>
+<li>It is mainly used when parameter name and field names are same</li>
+</ul>
+<p>&nbsp;</p>
+			
+			
+			
+			
             </div>
-           <div style="margin-left:5%;margin-top:2%">
-                
-             
-                    
-                <h2><b><en>What are conditional statements ?</en></b></h2>
+        </div>
+    </div>
+</div>
 
-<p><br />
-</p>
-<p><span style="font-size: medium;"><strong>The conditional statements in java has a form :</strong></span></p>
-<p><span style="font-size: medium;"><strong>if (condition)</strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong> // if the condition is true</strong></span></p>
-<p><span style="font-size: medium;"><strong>// execute these statements :</strong></span></p>
-<p><span style="font-size: medium;"><strong>//statement1;</strong></span></p>
-<p><span style="font-size: medium;"><strong>//statements2;</strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
-<p><span style="font-size: medium;"><strong>The condition must be surrounded by parenthesis.</strong></span></p>
-<p><span style="font-size: medium;"><strong>FOR EXAMPLE :</strong></span></p>
-<p><span style="font-size: medium;"><strong>if ( your age &gt;=18 )</strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong>&nbsp;&nbsp; System.out.println("you can vote");</strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span style="font-size: medium;"><strong>&nbsp;<span style="text-decoration: underline; ">IF ELSE STATEMENTS</span></strong></span></p>
-<p><span style="font-size: medium;"><strong>if (condition )<br /></strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong>//condition is true </strong></span></p>
-<p><span style="font-size: medium;"><strong>//execute this statements; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
-<p><span style="font-size: medium;"><strong>else</strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong>// since condition is false</strong></span></p>
-<p><span style="font-size: medium;"><strong>//execute this statements;</strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
-<p>&nbsp;</p>
-<p><em><span style="text-decoration: underline;"><span style="font-size: medium;"><strong>there are two two types of nested conditional statements :</strong></span></span></em></p>
-<p><span style="font-size: medium;"><strong>-&gt; nested if statements</strong></span></p>
-<p><span style="font-size: medium;"><strong>if ( condition1 )</strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (condition 2)</strong></span></p>
-<p><span style="font-size: medium;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //statements;</strong></span></p>
-<p><span style="font-size: medium;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span></p>
-<p><span style="font-size: medium;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (condition3)</strong></span></p>
-<p><span style="font-size: medium;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp; // statements; }</strong></span></p>
-<p><span style="font-size: medium;"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
-<p>&nbsp;</p>
-<p><span style="font-size: medium;"><strong>-&gt; nested if else statements (more used)</strong></span></p>
-<p>&nbsp;</p>
-<p><span style="font-size: medium;"><strong>if(condition1)</strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong>//statement;</strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
-<p><span style="font-size: medium;"><strong>else if (condition 2)</strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong>//statement;</strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
-<p><span style="font-size: medium;"><strong>else if (condition 3)</strong></span></p>
-<p><span style="font-size: medium;"><strong>{</strong></span></p>
-<p><span style="font-size: medium;"><strong>//statements;</strong></span></p>
-<p><span style="font-size: medium;"><strong>}</strong></span></p>
+
+    <!-- content ends -->
+    </div><!--/#content.col-md-0-->
+</div><!--/fluid-row-->
+
+	
+
+    <hr>
+
+
+</div><!--/.fluid-container-->
 
 
 
-
-
-
-
-
-<div><a class="button" href="http://javajust.com/loops.html">NEXT</a></div>
 <!-- external javascript -->
+
 
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 

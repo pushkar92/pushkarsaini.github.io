@@ -1,18 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-    
-    
-    
-    <meta charset="utf-8">
-    <title>Java Just</title>
+<meta charset="utf-8">
+    <title>Java Just in Time</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="learn java just in time and get through java
-    interview questions and answers.Java programming language questions for practise.">
-<meta name="keywords" content="what is collection , collection , collections in java , what are collections , what are collections in java">
+    <meta name="description" content=" Polymorphism is a concept which allows to perform more than one operations by an item.">
+<meta name="keywords" content="what is polymorphism , polymorphism , method overloading , constructor overloading">
 <meta name="author" content="Sandhya and Poornima">
+
     <style>
+   .appear
+   {
+    font-family: Arial black;
+    font-size: 16%;
+    background-color: #C0C0C0;
+    margin: 10px;
+    padding: 10px;
+    border: 20px;
+    text-align: center;
+    color: white;
+   }
+   
 .button {
     background-color: #00CED1;
     border: none;
@@ -25,6 +34,12 @@
     margin: 4px 2px;
     cursor: pointer;
     position:center ;
+}
+.pos{
+ left: 2000px ;
+}
+.posit{
+ left: 3000px;
 }
 </style>
 
@@ -54,7 +69,7 @@
     <![endif]-->
  <!-- The fav icon -->
     <link rel="shortcut icon" href="img/logo.png">
-    
+    <script type = "text/javascipt" src="accordion.js" ></script>
 
 </head>
 
@@ -118,7 +133,6 @@
                         </li>
                         <li><a class="ajax-link" href="taking-input.html"><i class="glyphicon glyphicon-eye-open"></i><span> Taking input</span></a>
                         </li>
-                        
                         <li><a class="ajax-link" href="conditional.html"><i class="glyphicon glyphicon-eye-open"></i><span>Conditional statements </span></a>
 </li>
 <li><a class="ajax-link" href="loops.html"><i class="glyphicon glyphicon-eye-open"></i><span>Loops and Switch statements</span></a>
@@ -127,7 +141,7 @@
 </li>
 <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> OOPS</span></a>
-                            <ul class="nav nav-pills nav-stacked  smart">
+                            <ul class="nav nav-pills nav-stacked">
                            
 <li><a class="ajax-link" href="oops.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Concept of OOPS </span></a>
 </li>
@@ -141,7 +155,7 @@
  <li><a class="ajax-link" href="exception.html"><i class="glyphicon glyphicon-eye-open"></i><span>Exception Handling</span></a>
 </li>
                                                 <li><a class="ajax-link" href="javaques.html"><i class="glyphicon glyphicon-eye-open"></i><span> Java Interview Questions And Answers</span></a>
-</li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -168,22 +182,234 @@
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2> Collections </h2>
-</div>
+
+
+			<p><strong>Introduction to C++</strong></p>
+<p>&nbsp;</p>
+<p>C++ was developed by Bjarne Stroupstrup by adding OOPs concepts in C and called as C with OOPs which was later changed to C++.</p>
+<p>&nbsp;</p>
+<p><strong>What is OOPs?</strong></p>
+<p>&nbsp;</p>
+<p>OOPs stands for Object Oriented Programming System which is a system or methodology for <strong><em>Better Project Management</em></strong> using some components called pillars of OOPs</p>
+<p>These components are</p>
+<p>&nbsp;</p>
+<ol>
+<li>Encapsulation</li>
+<li>Abstraction</li>
+<li>Polymorphism</li>
+<li>Inheritance</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Encapsulation</strong></p>
+<p>Place all the fields and methods related with an entity at one place and none of the members should be accessible outside without permission.</p>
+<p>&nbsp;</p>
+<p>Use <strong>class</strong> keyword to build the encapsulation</p>
+<p>&nbsp;</p>
+<p>class &lt;classname&gt;</p>
+<p>{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //members</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>All members inside a class are private by default.</p>
+<p>&nbsp;</p>
+<p><strong>Abstraction</strong></p>
+<p>&nbsp;</p>
+<p>Abstraction provides controlling by define scope on the member of a class. C++ provides three kinds of scopes</p>
+<p>&nbsp;</p>
+<ol>
+<li>Private (default)</li>
+<li>Public</li>
+<li>Protected</li>
+</ol>
+<p>&nbsp;</p>
+<p>To define different sections inside a class use private:, public: and protected:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Members inside a class</strong></p>
+<p>&nbsp;</p>
+<p>A class can have different members</p>
+<p>&nbsp;</p>
+<ol>
+<li>field&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- data member</li>
+<li>method &ndash; function member</li>
+</ol>
+<p>&nbsp;</p>
+<p>Methods again can be of different types</p>
+<p>&nbsp;</p>
+<ol>
+<li>Special methods</li>
+<li>General methods</li>
+</ol>
+<p>&nbsp;</p>
+<p>Special methods again can be of two types</p>
+<p>&nbsp;</p>
+<ol>
+<li>Constructor</li>
+<li>Destructor</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Constructor</strong></p>
+<p>&nbsp;</p>
+<ul>
+<li>A method inside a class having some features
+<ul>
+<li>Same name as class</li>
+<li>No return type</li>
+<li>Used to initialize fields of an object</li>
+<li>Constructor can be overloaded</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Passing data to the fields of an object :&nbsp;</strong>Data can be passed using a constructor or using a method.</p>
+<p>&nbsp;</p>
+<p>Let's us see that with the help of an example</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:100%;"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020">#include&lt;iostream.h&gt;  </span><span style="color: #60a0b0; font-style: italic">// For input/output operations</span>
+<span style="color: #007020">#include&lt;conio.h&gt;	</span><span style="color: #60a0b0; font-style: italic">// For clrscr() function</span>
+<span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">number</span> <span style="color: #60a0b0; font-style: italic">// We declare a class with name number</span>
+{
+	<span style="color: #902000">int</span> n; <span style="color: #60a0b0; font-style: italic">// Class variable whose value we will set by method or coonstructor</span>
+	<span style="color: #002070; font-weight: bold">public:</span>
+		number() <span style="color: #60a0b0; font-style: italic">//Constructor without any parameters</span>
+		{
+			n<span style="color: #666666">=</span><span style="color: #40a070">0</span>;
+		}
+		number(<span style="color: #902000">int</span> num) <span style="color: #60a0b0; font-style: italic">//Constructor overloading, object will be needing a parameter</span>
+		{
+			n<span style="color: #666666">=</span>num;
+		}
+
+		<span style="color: #902000">void</span> setNumber(<span style="color: #902000">int</span> num) <span style="color: #60a0b0; font-style: italic">// Setting value of n using method</span>
+		{
+			<span style="color: #007020; font-weight: bold">if</span>(num<span style="color: #666666">&lt;</span><span style="color: #40a070">1</span>)
+			{
+				cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Number must be greater than 0&quot;</span> <span style="color: #666666">&lt;&lt;</span> endl;
+				<span style="color: #007020; font-weight: bold">return</span>;
+			}
+			n<span style="color: #666666">=</span>num; <span style="color: #60a0b0; font-style: italic">// We can set value of n by this way without using constructor</span>
+		}
+
+		<span style="color: #902000">void</span> square() <span style="color: #60a0b0; font-style: italic">//Method that calculates the square of  ‘n’</span>
+		{
+			<span style="color: #007020; font-weight: bold">if</span>(n<span style="color: #666666">==</span><span style="color: #40a070">0</span>)
+			{
+				cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Sorry! No data provided&quot;</span> <span style="color: #666666">&lt;&lt;</span> endl;
+				<span style="color: #007020; font-weight: bold">return</span>;
+			}
+
+			cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Square of &quot;</span> <span style="color: #666666">&lt;&lt;</span> n <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot; is &quot;</span> <span style="color: #666666">&lt;&lt;</span> n<span style="color: #666666">*</span>n <span style="color: #666666">&lt;&lt;</span> endl;
+		}
+
+		<span style="color: #902000">void</span> cube() <span style="color: #60a0b0; font-style: italic">//Method that calculates the cube of ‘n’</span>
+
+		{
+			<span style="color: #007020; font-weight: bold">if</span>(n<span style="color: #666666">==</span><span style="color: #40a070">0</span>)
+			{
+				cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Sorry! No data provided&quot;</span>;
+				<span style="color: #007020; font-weight: bold">return</span>;
+			}
+			cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Cube of &quot;</span> <span style="color: #666666">&lt;&lt;</span> n <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot; is &quot;</span> <span style="color: #666666">&lt;&lt;</span> n<span style="color: #666666">*</span>n<span style="color: #666666">*</span>n <span style="color: #666666">&lt;&lt;</span> endl;
+		}
+
+<span style="color: #60a0b0; font-style: italic">// Note : Both square and cube can be called irrespective of the case how value of n is set.</span>
+}; <span style="color: #60a0b0; font-style: italic">// Notice the semicolon (it is not needed in Java or .net)</span>
+
+
+<span style="color: #902000">void</span> <span style="color: #06287e">main</span>()  <span style="color: #60a0b0; font-style: italic">// Here also everything starts from main method</span>
+{
+	clrscr();
+	<span style="color: #902000">int</span> a,b;
+	cout <span style="color: #666666">&lt;&lt;</span> <span style="color: #4070a0">&quot;Enter two numbers : &quot;</span>;
+	cin <span style="color: #666666">&gt;&gt;</span> a <span style="color: #666666">&gt;&gt;</span> b;
+	number x,y; <span style="color: #60a0b0; font-style: italic">//objects of number class</span>
+	x.setNumber(a);
+	x.square();
+	x.cube();
+	y.setNumber(b); <span style="color: #60a0b0; font-style: italic">//passing data using method</span>
+	y.square();
+	y.cube();
+	number z(<span style="color: #40a070">8</span>); <span style="color: #60a0b0; font-style: italic">//passing data using constructor</span>
+	z.cube();
+}
+</pre></td></tr></table></div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-   </div>
+			
+			
+			
+			
+            </div>
         </div>
     </div>
 </div>
@@ -193,14 +419,17 @@
     </div><!--/#content.col-md-0-->
 </div><!--/fluid-row-->
 
-
+	
 
     <hr>
 
 
 </div><!--/.fluid-container-->
-<div><a class="button" href="http://javajust.com/javaques.html">NEXT</a></div>
+
+
+
 <!-- external javascript -->
+
 
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
