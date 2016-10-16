@@ -4,70 +4,101 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>http://javajust.com/</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/index.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://javajust.com/introduction.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://javajust.com/data-type-literals.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/taking-input.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/conditional.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/loops.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/array.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/oops.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/inheritance.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/abstract.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/poly.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/exception.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://javajust.com/javaques.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
+  <loc>http://javajust.com/cpp.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://javajust.com/aboutus.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://javajust.com/policy.html</loc>
-  <lastmod>2016-06-27T06:49:23+00:00</lastmod>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/data-type-literals.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/taking-input.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/conditional.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/loops.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/array.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/oops.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/inheritance.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/abstract.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/poly.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/exception.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/javaques.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/cpp2.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/cpp3.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://javajust.com/index.html</loc>
+  <lastmod>2016-10-16T07:40:04+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 </urlset>
