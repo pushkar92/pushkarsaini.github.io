@@ -207,15 +207,23 @@
     <li><span style="font-size: large; font-family: arial black,avant garde;">&nbsp;Trying to find a Class object for a string that does not denote an existing class</span></li>
 </ul>
 <hr />
+            <h2>if there is RuntimeException, it was your fault.And you must solve it.</h2>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><span style="font-size: large; font-family: arial black,avant garde;">The Java language Specification calls any exception that derives from the class Error or class RuntimeException =&gt; <span style="font-size: x-large;"><em><span style="text-decoration: underline;">unchecked exception</span></em></span></span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: large; font-family: arial black,avant garde;">All other exceptions are called <span style="text-decoration: underline;"><em>=&gt;<span style="font-size: x-large;"> checked exception</span></em></span></span></p>
 <p>&nbsp;</p>
+            <h2>The compiler checks that you provide exception handlers for all checked exceptions.</h2>
 <p>&nbsp;</p>
 <hr />
 <p>&nbsp;</p>
+            <h1 style="text-align: center;"><span style="text-decoration: underline;">CREATING AN EXCEPTION</span></h1>
+<h2>Sometimes, our code has a problem which cannot be described by any of standard exception classes.In that case we will create our own class and derive it from Exception class or from the child class of Exception like IOException.</h2>
+<h2>Now thing to remember we must create both default constructor and constructor that contains detailed message.</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+            <hr />
 <p>&nbsp;</p>
 <p style="text-align: center;"><strong><em><span style="text-decoration: underline;"><span style="font-size: large; font-family: arial black,avant garde; color: #00ccff; text-decoration: underline;">HOW TO THROW AN EXCEPTION</span></span></em></strong></p>
 <p style="text-align: left;"><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">You need to decide what exception type to throw.<br /></span></p>
