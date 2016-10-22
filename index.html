@@ -21,15 +21,122 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <script src="js/jquery.min.js"></script>
+
+ <style>
+ @import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
+@import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
+@import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
+@import url('//fonts.googleapis.com/css?family=Pacifico&text=Pure');
+@import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
+@import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
+
+body { 
+  min-height: 450px;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle, darken(dodgerblue, 10%), #1f4f96, #1b2949, #000);
+}
+
+.stage {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+   position:relative;
+   z-index:1000;
+  top: 0; right: 0; bottom: 0; left: 0;
+  perspective: 9999px;
+  transform-style: preserve-3d;
+}
+
+.layer {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
+  animation-fill-mode: forwards;
+  transform: rotateY(40deg) rotateX(33deg) translateZ(0);
+}
+
+.layer:after {
+  font: 50px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+  content: 'Java Just !';
+  white-space: pre;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50px; 
+  color: darken(#fff, 4%);
+  letter-spacing: -2px;
+  text-shadow: 4px 0 10px hsla(0, 0%, 0%, .13);
+}
+
+$i: 1;
+$NUM_LAYERS: 20;
+@for $i from 1 through $NUM_LAYERS {
+  .layer:nth-child(#{$i}):after{
+    transform: translateZ(($i - 1) * -2px);
+  }
+}
+
+.layer:nth-child(n+#{round($NUM_LAYERS/2)}):after {
+  -webkit-text-stroke: 3px hsla(0, 0%, 0%, .25);
+}
+
+.layer:nth-child(n+#{round($NUM_LAYERS/2 + 1)}):after {
+  -webkit-text-stroke: 15px dodgerblue;
+  text-shadow: 6px 0 6px darken(dodgerblue,35%),
+               5px 5px 5px darken(dodgerblue,40%),
+               0 6px 6px darken(dodgerblue,35%);
+}
+
+.layer:nth-child(n+#{round($NUM_LAYERS/2 + 2)}):after {
+  -webkit-text-stroke: 15px darken(dodgerblue, 10%);
+}
+
+.layer:last-child:after {
+  -webkit-text-stroke: 17px hsla(0, 0%, 0%, .1);
+}
+
+.layer:first-child:after{
+  color: #fff;
+  text-shadow: none;
+}
+
+@keyframes ಠ_ಠ {
+  100% { transform: rotateY(-30deg) rotateX(-33deg); }
+}
+
+
+ </style>
 </head>
 <body>
 <!-- header -->
 <div class="header">
 	<div class="container">
-		<div class="logo">
-			<a href="http://javajust.com"><img src="/img/web.PNG" style="width:200%;height:80px;" alt="JavaJust"/></a>
-		</div>
-	  <div class="clearfix"></div>
+		<div class="stage pull-left" style="margin-bottom: -2%;margin-top: -2%;margin-left: 30%">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
 	</div>
 </div>
 	<p><br /></p>
@@ -48,12 +155,12 @@
 
 			<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav">
-				  <li class="active"><a href="http://javajust.com" title="click"> <i class="glyphicon glyphicon-home"></i>Home </a></li>
-				<li><a href="http://javajust.com/introduction.html" title="click"> <i class="glyphicon glyphicon-circle-arrow-right"></i> Java</a></li>
-				<li><a href="http://javajust.com/cpp.html" title="click"><i class="glyphicon glyphicon-circle-arrow-right"></i> C++</a></li>
-				<li><a href="http://javajust.com/aboutus.html" title="click"><i class="glyphicon glyphicon-user"></i> Authors</a></li>
-				<li><a href="http://javajust.com/policy.html" title="click"><i class="glyphicon glyphicon-list"></i> Privacy Policy</a></li>
-				<li><a href="http://javajust.com/aboutus.html" title="click"><i class="glyphicon glyphicon-eye-open"></i> About</a></li>
+				<li class="active"><a href="http://javajust.com" title="click">Home </a></li>
+				<li><a href="http://javajust.com/introduction.html" title="click">Java</a></li>
+				<li><a href="http://javajust.com/cpp.html" title="click">C++</a></li>
+				<li><a href="http://javajust.com/aboutus.html" title="click">Authors</a></li>
+				<li><a href="http://javajust.com/policy.html" title="click">Privacy Policy</a></li>
+				<li><a href="http://javajust.com/aboutus.html" title="click">About</a></li>
 			  </ul>
               
 			  <div class="social-icons">
@@ -110,11 +217,7 @@
 <p><br /></p>
 <div class="d-block bg-info">
 	<div class="container">
-	<div class="col-md-8"><h2 style="font-family:Arial Black">Description</h2>
-<p style="font-family:Arial Black">Learn Programming Languages at your one click.
-Practise Interview Questions.
-Practise Board Questions.</p>
-  </div>
+	Hello fellow programmer, Welcome to JavaJust
 </div>
 </div>
 <p><br /></p><p><br /></p>
