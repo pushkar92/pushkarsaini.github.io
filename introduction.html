@@ -323,15 +323,33 @@
 <p>&nbsp;</p>
 </li>
 </ol>
-<h2><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong> Java Environment (JRE) </strong></span></span></h2>
+<h2><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong> Java Runtime Environment (JRE) </strong></span></span></h2>
 <p>&nbsp;</p>
-<p><span style="font-family: arial black,avant garde;"> It consist of development tools(JDK) and API(Application Programming Interface). </span></p>
+<p><span style="font-family: arial black,avant garde;"> It consist of Java Development Kit&nbsp; (JDK) ,&nbsp; development tools and Application Programming Interface (API).</span></p>
+<p>Application Programming Interface(API) is a collection of classes, methods and interfaces provided in the form of packages.</p>
+<p>=&gt; APPLICATION PROFRAMMING PACKAGES:</p>
 <ul>
-<li><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong> Java Development Kit(JDK) </strong></span></span></li>
+<li>java.lang - contain classes that are essential to design the Java programs.</li>
+<li>java.util - contain useful classes like collection classes , Scanner class , date and time classes</li>
+<li>java.io - contain classes for system input and output.</li>
+</ul>
+<p>=&gt; APPLET AND NETWORK PROGRAMMING PACKAGES</p>
+<ul>
+<li>java.awt - contain classes for user interface and painting graphics and images.</li>
+<li>java.applet - contain classes that are essential to create applets.</li>
+<li>java.net - contain classes that are used to implement networking in Java.</li>
+</ul>
+<p>=&gt; DATABASE CONNECTIVITY PACKAGES</p>
+<ul>
+<li>java.sql - contain classes and interface to establish connection with databases and for&nbsp;creating, maintaining and modifying ithe databases.</li>
+<li>javax.sql - JDBC Optional package.</li>
 </ul>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong>Java Development Kit(JDK) </strong></span></span></p>
+<p>&nbsp;</p>
 <p><span style="font-family: arial black,avant garde;"> JDK is a collection of tools to develop and run Java programs. JDK has following development tools :-</span></p>
-		<ul>
+<ul>
 <li><span style="text-decoration: underline;"><strong>java </strong></span> =&gt; It is a Java Interpreter. It read and interpret the bytecode files.</li>
 <li><span style="text-decoration: underline;"><strong>javac</strong></span> =&gt; It is a Java Compiler. It translate the source code to bytecode files.</li>
 <li><span style="text-decoration: underline;"><strong>javacdoc</strong></span> =&gt; It creates HTML documentation for Java files.</li>
@@ -341,45 +359,23 @@
 <li><span style="text-decoration: underline;"><strong>javap</strong></span> =&gt; It is Java disassemble. It convert bytecode files into Java program description.</li>
 <li><span style="text-decoration: underline;"><em><strong>jar</strong></em></span> =&gt; It is Java Archive. It is used to package related class libraries into single executable JAR files and it manage them.</li>
 </ul>
-<p>&nbsp;</p>		
-<h2><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong>Features of Java</strong></span></span></h2>
-<p><span style="font-size: x-large;">&nbsp;</span></p>
-<ul>
-<li>
-<p><span style="font-family: arial black,avant garde;">Simple and Sober</span></p>
-</li>
-<li>
-<p><span style="font-family: arial black,avant garde;">Object Oriented</span></p>
-</li>
-<li>
-<p><span style="font-family: arial black,avant garde;">Portable</span></p>
-</li>
-<li>
-<p><span style="font-family: arial black,avant garde;">Platform Independent or Write Once Run Anywhere</span></p>
-</li>
-<li>
-<p><span style="font-family: arial black,avant garde;">Multi Threaded</span></p>
-</li>
-<li>
-<p><span style="font-family: arial black,avant garde;">Secure</span></p>
-</li>
-<li>
-<div style="font-family: arial black,avant garde;">
-<p>Robust</p>
-<ol>
-<li>
-<p>Java provides built-in tool called Garbage Collector to de-allocate unused memory to avoid memory leakage</p>
-</li>
-<li>
-<p>Java provides special classes called exception to exact report the problems in runtime.</p>
-</li>
-<li>
-<p>Java provides a big set of classes called Java API for almost any purpose</p>
-</li>
-</ol>
-</div>
-</li>
-</ul>
+<p>&nbsp;</p>
+<p>We know that Compiler convert high level language into machine language.</p>
+<p>But in Java, Compiler translates the source code into an intermediate code known as Bytecode.We can say that the bytecode is a machine language for Java Virtual Machine (JVM). Bytecode is not machine specific(different operating systems).</p>
+<p>Interpreter of Java is used to generate the machine specific code.</p>
+<h1>JAVA VIRTUAL MACHINE (JVM)</h1>
+<p>JVM is an abstract computing machine that actually execute the Java programs.</p>
+<p>ClassLoader is part of JRE that loads classes in the JVM.</p>
+<p>&nbsp;</p>
+<p>NOTE: JRE , JDK and JVM is platform dependent because configuration of each operating system differs but Java is not platform dependent because the source code is converted into bytecode file which has instructions that have nothing to do with computer architecture.</p>
+<p>&nbsp;</p>
+		
+		
+		
+		
+		
+		
+		
 <p><span style="font-family: arial black,avant garde;">&nbsp;</span></p>
 <p>&nbsp;</p>
 <h2><span style="text-decoration: underline; color: #00ccff;"><span style="font-size: x-large;"><strong>Writing first Java Program</strong></span></span></h2>
