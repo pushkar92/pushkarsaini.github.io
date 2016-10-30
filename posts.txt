@@ -1,0 +1,5 @@
+What are literals in Java ?
+What is difference between 6 and 6L ?
+What is difference between 9.2 and 9.2f ?
+
+To understand the concept in 2 minutes CLICK http://javajust.com/data-type-literals.html
