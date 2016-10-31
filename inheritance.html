@@ -249,8 +249,7 @@ button a {
 <li>Super Class can hold the reference to the Sub Class but can access only those fields and methods which are derived or inherited from it.</li>
 <li>While overidding the method of Super Class in the Sub Class we cannot decrease the scope of access modifiers (we will study over-riding in the polymorphism context.)</li>
 </ol>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p><br /></p>
 		   
 		   <h1>TYPES OF INHERITANCE</h1>
 <h2>SINGLE INHERITANCE</h2>
@@ -263,8 +262,7 @@ button a {
 <p>When a Child class inherits from a class that itsekf inherits from the another class.</p>
 <h2>HYBRID INHERITANCE</h2>
 <p>Combination of two or more forms of inheritance is called as Hybrid Inheritance.</p>   
-		   <p>&nbsp;</p>
-		   <p>&nbsp;</p>
+		  <p><br /></p>
 <img src="/img/typeofinherit-min.JPG" class="img-responsive" />
 <p><br /></p>
 
@@ -282,11 +280,17 @@ button a {
 <p>In the constructor, when we call constructor of another class then it has to be the first statement.</p>
 <p>Both this and super has to be the first statement in the constructor call that's why you can never use this and super together in the constructor call.</p>
 <p>this keyword will refer to the constructor of the same class and super keyword will refer to the constructor of Super Class.</p>
-<p>&nbsp;</p>
-
+<p><br /></p>
+<h1>POINTS TO REMEMBER</h1>
+<ul>
+<li>We know that Sub class cannot access the private fields of the Super class.We can initialize the private fields of the Super class by using the super keyword as the first statement in the constructor of Sub Class.</li>
+<li>Compiler always call the default constructor of the Super Class by making super() keyword as the first statement which is not visible to us.</li>
+<li>If Super class has parameterized constructor, then the programmer has to call it explicitly.</li>
+<li>If Super class has no default constructor and it has one parameterized constructor, somehow we forget to call the parameterized constructor explicitly from the Sub class,&nbsp; then the Java compiler ( javac ) will report an error.</li>
+</ul>
    
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+
 <p><br /></p>
 <p><em><span style="text-decoration: underline;"><span style="font-size: small; font-family: arial black,avant garde;">LET'S TAKE A LOOK AT PROGRAM </span></span></em></p>
 <p><em><span style="text-decoration: underline;"><span style="font-size: small; font-family: arial black,avant garde;">( read comments in the program for better understanding. )</span></span></em></p>
