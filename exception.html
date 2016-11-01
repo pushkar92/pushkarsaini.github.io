@@ -48,7 +48,9 @@ button a {
     <![endif]-->
  <!-- The fav icon -->
     <link rel="shortcut icon" href="img/logo.png">
-    
+    <style>body{font-family: 'Playfair Display', serif;
+font-size:150%;}
+</style>
 
 </head>
 
@@ -113,8 +115,7 @@ button a {
                         <li><a class="ajax-link" href="taking-input.html"><i class="glyphicon glyphicon-eye-open"></i><span> Taking input</span></a>
                         </li>
                         
-                        <li><a class="ajax-link" href="conditional.html"><i class="glyphicon glyphicon-eye-open"></i><span>Conditional statements </span></a>
-</li>
+                    
 <li><a class="ajax-link" href="loops.html"><i class="glyphicon glyphicon-eye-open"></i><span>Loops and Switch statements</span></a>
 </li>
                         <li><a class="ajax-link" href="array.html"><i class="glyphicon glyphicon-eye-open"></i><span>Arrays</span></a>
@@ -216,110 +217,110 @@ button a {
                 
              
             <p><br /></p>
-
-<p><span style="font-family: arial black,avant garde; font-size: large;">EXCEPTION HANDLING : - for exceptional situations, such as bad input data with the potential to bomb the program, Java uses a form of error trapping called, naturally enough, exception handling.</span></p>
+<h2>EXCEPTION HANDLING</h2>
+<p><span style=" ">It is very common to have errors. Errors are irrecoverable events that leads to complete halt and cannot be handled. Sometimes exceptional situations arises that can be handled through the code, such as bad input data with the potential to bomb the program. It is important to note that error and checked exceptions are two different things. Error and Exception are different classes in Java, but both inherits Throwable. Java uses a form of exception trapping called, naturally enough, exception handling.</span></p>
 <p>&nbsp;</p>
-<p><span style="font-family: arial black,avant garde; font-size: large;">Java allows every method an alternative exit path if it is unable to complete its task in a normal way. In this situation, the method does not return a value. Instead it throws an object that encapsulates the error information.</span></p>
-<p><span style="font-family: arial black,avant garde; font-size: large;">Execution does not resume at the code that called the method ; instead exception handling mechanism&nbsp; begins its search for an exception handler that can deal with this particular error condition.</span></p>
-<p>&nbsp;</p>
-<p style="text-align: center;"><span style="text-decoration: underline; font-size: x-large;"><span style="font-family: arial black,avant garde;">CLASSIFICATION OF EXCEPTIONS</span></span></p>
-<p style="text-align: left;"><span style="font-size: large;"><span style="font-family: arial black,avant garde;"></span></span></p>
+<p><span style=" ">Java allows every method an alternative exit path if it is unable to complete its task in a normal way. In this situation, the method does not return a value. Instead it throws an object that encapsulates the exception information.</span></p>
+<p><span style=" ">Execution does not resume at the code that called the method, instead exception handling mechanism begins its search for an exception handler that can deal with this particular exception condition.</span></p>
+<p><br></p>
+<h2>>CLASSIFICATION OF EXCEPTIONS</h2>
+<p style="text-align: left;"><span style=""><span style=""></span></span></p>
 
 <p><br /></p>
 <img src="/img/exception-min[1].JPG" class="img-responsive" />
 <p><br /></p>
 
 <ul>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">An exception object is always an instance of class derived from Throwable.</span></li>
+    <li><span style=" ">An exception object is always an instance of class derived from Throwable.</span></li>
 </ul>
 <ul>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">All exceptions descend from Throwable but hierarchy splits into two branches : Error and Exception.</span></li>
+    <li><span style=" ">All exceptions descend from Throwable but hierarchy splits into two branches : Error and Exception.</span></li>
 </ul>
-<hr />
+<br>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span style="font-size: large; font-family: arial black,avant garde;">1. Exceptions that inherit from RuntimeException include such problems as</span></p>
+<p style=""><span style=" ">1. Exceptions that inherit from RuntimeException include such problems as</span></p>
 <ul>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">&nbsp;A bad cast</span></li>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">An out-of-bounds array access</span></li>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">A null pointer access</span></li>
+    <li><span style=" ">A bad cast</span></li>
+    <li><span style=" ">An out-of-bounds array access</span></li>
+    <li><span style=" ">A null pointer access</span></li>
 </ul>
-<p style="text-align: center;"><span style="font-size: large; font-family: arial black,avant garde;">2. Exceptions that do not inherit from RuntimeException include</span></p>
+<p style=""><span style=" ">2. Exceptions that do not inherit from RuntimeException include</span></p>
 <ul>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">&nbsp;Trying to read past the end of file</span></li>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">Trying to open a malformed URL</span></li>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">&nbsp;Trying to find a Class object for a string that does not denote an existing class</span></li>
+    <li><span style=" ">Trying to read past the end of file</span></li>
+    <li><span style=" ">Trying to open a malformed URL</span></li>
+    <li><span style=" ">Trying to find a Class object for a string that does not denote an existing class</span></li>
 </ul>
-<hr />
-            <h2>if there is RuntimeException, it was your fault.And you must solve it.</h2>
+<br>
+            <h3>More often than not if there is RuntimeException, it might be your fault and you must solve it.</h3>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><span style="font-size: large; font-family: arial black,avant garde;">The Java language Specification calls any exception that derives from the class Error or class RuntimeException =&gt; <span style="font-size: x-large;"><em><span style="text-decoration: underline;">unchecked exception</span></em></span></span></p>
+<p><span style=" ">The Java language Specification calls any exception that derives from the class Error or class RuntimeException =&gt; <span style=""><em><span style="text-decoration: underline;">unchecked exception</span></em></span></span></p>
 <p>&nbsp;</p>
-<p><span style="font-size: large; font-family: arial black,avant garde;">All other exceptions are called <span style="text-decoration: underline;"><em>=&gt;<span style="font-size: x-large;"> checked exception</span></em></span></span></p>
+<p><span style=" ">All other exceptions are called <span style="text-decoration: underline;"><em>=&gt;<span style=""> checked exception</span></em></span></span></p>
 <p>&nbsp;</p>
             <h2>The compiler checks that you provide exception handlers for all checked exceptions.</h2>
 <p>&nbsp;</p>
-<hr />
+<br><br>
 <p>&nbsp;</p>
-            <h1 style="text-align: center;"><span style="text-decoration: underline;">CREATING AN EXCEPTION</span></h1>
-<h2>Sometimes, our code has a problem which cannot be described by any of standard exception classes.In that case we will create our own class and derive it from Exception class or from the child class of Exception like IOException.</h2>
-<h2>Now thing to remember we must create both default constructor and constructor that contains detailed message.</h2>
+            <h2><span style="">CREATING AN EXCEPTION</span></h2>
+<p>Sometimes, our code has a problem which cannot be described by any of standard exception classes.In that case we will create our own class and inherit Exception class into it or from the child class of Exception like IOException.
+Now thing to remember we must create both default constructor and constructor that contains detailed message.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-            <hr />
+            <br><br>
 <p>&nbsp;</p>
-<p style="text-align: center;"><strong><em><span style="text-decoration: underline;"><span style="font-size: large; font-family: arial black,avant garde; color: #00ccff; text-decoration: underline;">HOW TO THROW AN EXCEPTION</span></span></em></strong></p>
-<p style="text-align: left;"><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">You need to decide what exception type to throw.<br /></span></p>
-<p style="text-align: left;"><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">for eg: here End Of File has reached unexpectedly during input so we are throwing exception for it.</span></p>
-<p style="text-align: left;"><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">here is how you throw it :</span></p>
-<p style="text-align: left;"><em><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">throw new EOFException();</span></em></p>
-<p style="text-align: left;"><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">or</span></strong></p>
-<p style="text-align: left;"><em><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">EOFException e = new EOFException();</span></em></p>
-<p style="text-align: left;"><em><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">throw e;</span></em></p>
-<p style="text-align: left;"><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">here is how it all fit together :</span></strong></p>
+<h2>HOW TO THROW AN EXCEPTION</h2>
+<p style="text-align: left;"><span style="">You need to decide what exception type to throw.<br /></span></p>
+<p style="text-align: left;"><span style="">for eg: here End Of File has reached unexpectedly during input so we are throwing exception for it.</span></p>
+<p style="text-align: left;"><span style="">here is how you throw it :</span></p>
+<p style="text-align: left;"><em><span style="">throw new EOFException();</span></em></p>
+<p style="text-align: left;"><strong><span style="">or</span></strong></p>
+<p style="text-align: left;"><em><span style="">EOFException e = new EOFException();</span></em></p>
+<p style="text-align: left;"><em><span style="">throw e;</span></em></p>
+<p style="text-align: left;"><strong><span style="">here is how it all fit together :</span></strong></p>
 <p style="text-align: left;">&nbsp;</p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">String readData( Scanner in ) throws EOFException</span></strong></em></p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">{</span></strong></em></p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">&nbsp;&nbsp; while ( .... )</span></strong></em></p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">{&nbsp;&nbsp; if ( ( ! in.hasNext() )&nbsp;&nbsp; // EOF encountered<br /></span></strong></em></p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { if ( n &lt; len )</span></strong></em></p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; throw new EOFException();&nbsp;&nbsp;&nbsp;&nbsp; }</span></strong></em></p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">}</span></strong></em></p>
-<p style="text-align: left;"><em><strong><span style="color: #000000; font-family: arial black,avant garde; font-size: large;">&nbsp;&nbsp;&nbsp; }</span></strong></em></p>
-<p style="text-align: left;">&nbsp;</p>
-<p style="text-align: center;"><span style="text-decoration: underline; color: #00ccff;"><strong><span style="font-family: arial black,avant garde; font-size: large;">CATCHING EXCEPTIONS</span></strong></span></p>
+<p style="text-align: left;"><em><strong><span style="">String readData( Scanner in ) throws EOFException</span></strong></em></p>
+<p style="text-align: left;"><em><strong><span style="">{</span></strong></em></p>
+<p style="text-align: left;"><em><strong><span style="">&nbsp;&nbsp; while ( .... )</span></strong></em></p>
+<p style="text-align: left;"><em><strong><span style="">{&nbsp;&nbsp; if ( ( ! in.hasNext() )&nbsp;&nbsp; // EOF encountered<br /></span></strong></em></p>
+<p style="text-align: left;"><em><strong><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { if ( n &lt; len )</span></strong></em></p>
+<p style="text-align: left;"><em><strong><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; throw new EOFException();&nbsp;&nbsp;&nbsp;&nbsp; }</span></strong></em></p>
+<p style="text-align: left;"><em><strong><span style="">}</span></strong></em></p>
+<p style="text-align: left;"><em><strong><span style="">&nbsp;&nbsp;&nbsp; }</span></strong></em></p>
+<p style="text-align: left;"><br></p>
+<h2>CATCHING EXCEPTIONS</h2>
 <p style="text-align: left;">&nbsp;</p>
 <ul>
-    <li><span style="color: #000000;"><span style="font-family: arial black,avant garde; font-size: large;">catching exception means what to do after you have throw the exception.</span></span></li>
-    <li><span style="color: #000000;"><span style="font-family: arial black,avant garde; font-size: large;">to catch an exception, you set up a <span style="text-decoration: underline;"><em>try / catch</em></span> block.</span></span></li>
-    <li><span style="color: #000000;"><span style="font-family: arial black,avant garde; font-size: large;">Simplest form of try block : -</span></span></li>
+    <li><span style=""><span style=" ">catching exception means what to do after you have throw the exception.</span></span></li>
+    <li><span style=""><span style=" ">to catch an exception, you set up a <span style="text-decoration: underline;"><em>try / catch</em></span> block.</span></span></li>
+    <li><span style=""><span style=" ">Simplest form of try block : -</span></span></li>
 </ul>
-<p><span style="font-size: large; font-family: arial black,avant garde;"><span style="font-size: x-large;"><span style="font-size: large;">try</span></span></span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde;"><span style="font-size: x-large;"><span style="font-size: large;">{&nbsp;&nbsp;&nbsp; // code &nbsp;&nbsp;&nbsp; }</span></span></span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde;">catch ( ExceptionType e )</span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde;">{&nbsp;&nbsp;&nbsp; // handler for this type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style=" "><span style=""><span style="">try</span></span></span></p>
+<p><span style=" "><span style=""><span style="">{&nbsp;&nbsp;&nbsp; // code &nbsp;&nbsp;&nbsp; }</span></span></span></p>
+<p><span style=" ">catch ( ExceptionType e )</span></p>
+<p><span style=" ">{&nbsp;&nbsp;&nbsp; // handler for this type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><em><span style="font-size: large; font-family: arial black,avant garde;">If any of the code inside the try block throws an exception of the class specified in the catch clause, then</span></em></p>
+<p style="text-align: center;"><em><span style=" ">If any of the code inside the try block throws an exception of the class specified in the catch clause, then</span></em></p>
 <p style="text-align: left;">&nbsp;</p>
 <ul>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">The program skips the remainder of the code in the try block.<br /></span></li>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">The program executes the handler code inside the catch clause.</span></li>
-    <li><span style="font-size: large; font-family: arial black,avant garde;">If none of the code inside the try block throws an exception, then the program skips the catch clause.</span></li>
+    <li><span style=" ">The program skips the remainder of the code in the try block.<br /></span></li>
+    <li><span style=" ">The program executes the handler code inside the catch clause.</span></li>
+    <li><span style=" ">If none of the code inside the try block throws an exception, then the program skips the catch clause.</span></li>
 </ul>
 <p><br /></p>
 <p><br /></p>
 
-<p style="text-align: center;"><span style="text-decoration: underline;"><span style="font-size: x-large; font-family: arial black,avant garde; color: #00ccff;">FINALLY</span></span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">Whether an exception has caught or not, the code in the finally clause always get executed.<br /></span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">The keyword is "finally".</span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">try</span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // statements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">catch ( ExceptionType e )</span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //statements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">finally</span></p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //statements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<h2>FINALLY</h2>
+<p><span style="  ">Whether an exception has caught or not, the code in the finally clause always get executed.<br /></span></p>
+<p><span style="  ">The keyword is "finally".</span></p>
+<p><span style="  ">try</span></p>
+<p><span style="  ">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // statements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="  ">catch ( ExceptionType e )</span></p>
+<p><span style="  ">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //statements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+<p><span style="  ">finally</span></p>
+<p><span style="  ">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //statements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
 <p>&nbsp;</p>
-<p><span style="font-size: large; font-family: arial black,avant garde; color: #000000;"></span></p>
+<p><span style="  "></span></p>
 
 <p><br /></p>
 
