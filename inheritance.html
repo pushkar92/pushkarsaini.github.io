@@ -233,13 +233,13 @@ font-size:150%;}
 
 <p><br />
 
-<p><span style="">Inheritance is capability of one class of things to derive capabilities from another class.</span></p>
+<p><span style="">Inheritance is capability of one class of things to derive capabilities from another class.For example, If Fruit is a class and Tomato inherits it, then tomato will have properties of Fruit class but vice versa is not true.</span></p>
 <p><span style="">Suppose you work for a company, where managers are treated differently from other employees. They both are paid salary but managers get bonus for a particular that they do in a month&nbsp; i.e. all managers are employees but all employees are not managers.</span></p>
 <p><span style="">Now you need to define two classes </span></p>
 <p><span style="">1. Employee </span></p>
 <p><span style="">2. Manager</span></p>
 <p><span style="">Manager class that inherits from the Employee class.</span></p>
-<p><span style="">We use the keyword - "extends" for inheritance.</span></p>
+<p><span style="">We use keywords - "extends" or "implements" for inheritance. If derived class inherits interface then we use "extends" keyword, if it inherits class then we use "extends" keywords</span></p>
 <p><span style=""><em><span style="text-decoration: underline;">Superclass / base class/ parent class</span></em> -&gt; is the class from which other classes inherits its properties.</span></p>
 <p><span style=""><em><span style="text-decoration: underline;">Subclass / derive class / child class</span></em> -&gt; is the class that inherit properties from the parent class.<br /></span></p>
 <p><span style="">class Employee</span></p>
@@ -248,9 +248,10 @@ font-size:150%;}
 <p><span style="">class Manager extends Employee<br /></span></p>
 <p><span style="">{&nbsp;&nbsp; }</span></p>
 <p>&nbsp;</p>
-<h1>RULES OF INHERITANCE</h1>
+<h2>RULES OF INHERITANCE</h2>
 <ol>
 <li>Sub Class cannot access the private fields and methods of Super Class.</li>
+<li>Sub Class cannot inherit more than one class at a time.</li>
 <li>Super Class can hold the reference to the Sub Class but can access only those fields and methods which are derived or inherited from it.</li>
 <li>While overidding the method of Super Class in the Sub Class we cannot decrease the scope of access modifiers (we will study over-riding in the polymorphism context.)</li>
 </ol>
@@ -258,39 +259,41 @@ font-size:150%;}
 		   
 		   <h1>TYPES OF INHERITANCE</h1>
 <h2>SINGLE INHERITANCE</h2>
-<p>When a Child class inherits from one Parent class.</p>
+<p>When a Child class inherits from one parent class/interface.</p>
 <h2>MULTIPLE INHERITANCE</h2>
-<p>When a Child class inherits from two or more Parent classes.</p>
+<p>When a Child class inherits from two or more parent interfaces (Java does not support multiple class inheritance).</p>
 <h2>HIERARCHICAL INHERITANCE</h2>
-<p>When many Child classes inherit from single Parent class.</p>
+<p>When many Child classes inherit from single parent class/interface.</p>
 <h2>MULTILEVEL INHERITANCE</h2>
-<p>When a Child class inherits from a class that itsekf inherits from the another class.</p>
+<p>When a Child class inherits from a class/interface that itself inherits from the another class/interface.</p>
 <h2>HYBRID INHERITANCE</h2>
 <p>Combination of two or more forms of inheritance is called as Hybrid Inheritance.</p>   
 		  <p><br /></p>
 <img src="/img/typeofinherit-min.JPG" class="img-responsive" />
 <p><br /></p>
 
-<h1>PUBLIC INHERITANCE OR DERIVATION</h1>
+<h2>PUBLIC INHERITANCE OR DERIVATION</h2>
 <ul>
 <li>All the inheritance in Java are public inheritance.There is no private or protected inheritance like C++ in Java language.</li>
 <li>Public Inheritance means Sub Class can access the public and protected members of the Super Class but not the private members of the Super Class.</li>
 <li>Public Derivation or Inheritance does not change the access specifiers for the derived or inherited members in the Sub Class.</li>
 </ul>
-<h1>this AND super KEYWORDS</h1>
-<p>this keyword is used to refer the current class instance variable , to call the current class method ,</p>
-<p>to call the current class constructor.</p>
-<p>this keyword can also be used as an argument. We can pass it as an argument in the method call and constructor call.</p>
-<p>super keyword is used to call the Super Class method and its constructor.</p>
-<p>In the constructor, when we call constructor of another class then it has to be the first statement.</p>
-<p>Both this and super has to be the first statement in the constructor call that's why you can never use this and super together in the constructor call.</p>
-<p>this keyword will refer to the constructor of the same class and super keyword will refer to the constructor of Super Class.</p>
+<h2>this AND super KEYWORDS</h2>
+<ol>
+<li>In java "this" keyword is a reference to the current object</li>
+<li>"this" is used to refer the current class instance variable or to call the current class method or to call the current class constructor.</li>
+<li>"this" keyword can also be used as an argument. We can pass it as an argument in the method call and constructor call.</li>
+<li>"super" keyword is used to call the Super Class method and its constructor.</li>
+<li>In the constructor, when we call constructor of another class then it has to be the first statement.</li>
+<li>Both this and super has to be the first statement in the constructor call that's why you can never use this and super together in the constructor call.</li>
+<li>this keyword will refer to the constructor of the same class and super keyword will refer to the constructor of Super Class.</li>
+</ol>
 <p><br /></p>
 <h1>POINTS TO REMEMBER</h1>
 <ul>
 <li>We know that Sub class cannot access the private fields of the Super class.We can initialize the private fields of the Super class by using the super keyword as the first statement in the constructor of Sub Class.</li>
 <li>Compiler always call the default constructor of the Super Class by making super() keyword as the first statement which is not visible to us.</li>
-<li>If Super class has parameterized constructor, then the programmer has to call it explicitly.</li>
+<li>If Super class has parameterized constructor, then the programmer has to call it explicitly, it is not called by default.</li>
 <li>If Super class has no default constructor and it has one parameterized constructor, somehow we forget to call the parameterized constructor explicitly from the Sub class,&nbsp; then the Java compiler ( javac ) will report an error.</li>
 </ul>
    
@@ -372,4 +375,4 @@ font-size:150%;}
  
 </body>
 </html>
-</p>
+
