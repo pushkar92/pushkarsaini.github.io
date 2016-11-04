@@ -284,13 +284,38 @@ button a {
 <p>Above Statement only declares the array, it does not initialize the array variable arr with actual array.</p>
 <p>We use the new operator to create the array.</p>
 <p>new operator allocate memory at run-time.Java initializes the array of type int values to 0 , double to 0.0 , float to 0.0 and char to '\0' .</p>
-<p>int[] arr = new int[10];</p>
+		   <p>int[] arr = new int[10];</p>
 <p>We can declare array in following ways too :</p>
 <p>int[] a;&nbsp;</p>
 <p>or</p>
 <p>int a[];</p>
 <p>or</p>
 <p>int []a;</p>
+		   <!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">Solution</span>
+<span style="color: #666666">{</span>
+   <span style="color: #007020; font-weight: bold">public</span> <span style="color: #007020; font-weight: bold">static</span> <span style="color: #902000">void</span> <span style="color: #06287e">main</span><span style="color: #666666">(</span>String<span style="color: #666666">[]</span> args<span style="color: #666666">)</span>
+   <span style="color: #666666">{</span>
+	   <span style="color: #902000">int</span> i<span style="color: #666666">[]</span> <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">new</span> <span style="color: #902000">int</span><span style="color: #666666">[</span><span style="color: #40a070">5</span><span style="color: #666666">];</span>
+	   <span style="color: #902000">float</span> f<span style="color: #666666">[]</span> <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">new</span> <span style="color: #902000">float</span><span style="color: #666666">[</span><span style="color: #40a070">5</span><span style="color: #666666">];</span>
+	   <span style="color: #902000">double</span> d<span style="color: #666666">[]</span> <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">new</span> <span style="color: #902000">double</span><span style="color: #666666">[</span><span style="color: #40a070">5</span><span style="color: #666666">];</span>
+	   <span style="color: #902000">char</span> c<span style="color: #666666">[]</span> <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">new</span> <span style="color: #902000">char</span><span style="color: #666666">[</span><span style="color: #40a070">5</span><span style="color: #666666">];</span>
+	   
+	   System<span style="color: #666666">.</span><span style="color: #4070a0">out</span><span style="color: #666666">.</span><span style="color: #4070a0">println</span><span style="color: #666666">(</span><span style="color: #4070a0">&quot;int starting value is = &quot;</span> <span style="color: #666666">+</span> i<span style="color: #666666">[</span><span style="color: #40a070">1</span><span style="color: #666666">]);</span>
+	   System<span style="color: #666666">.</span><span style="color: #4070a0">out</span><span style="color: #666666">.</span><span style="color: #4070a0">println</span><span style="color: #666666">(</span><span style="color: #4070a0">&quot;float starting value is = &quot;</span> <span style="color: #666666">+</span> f<span style="color: #666666">[</span><span style="color: #40a070">3</span><span style="color: #666666">]);</span>
+	   System<span style="color: #666666">.</span><span style="color: #4070a0">out</span><span style="color: #666666">.</span><span style="color: #4070a0">println</span><span style="color: #666666">(</span><span style="color: #4070a0">&quot;double starting value is = &quot;</span> <span style="color: #666666">+</span> d<span style="color: #666666">[</span><span style="color: #40a070">2</span><span style="color: #666666">]);</span>
+	   
+	   <span style="color: #007020; font-weight: bold">if</span><span style="color: #666666">(</span> c<span style="color: #666666">[</span><span style="color: #40a070">1</span><span style="color: #666666">]</span> <span style="color: #666666">==</span> <span style="color: #4070a0">&#39;\0&#39;</span><span style="color: #666666">)</span>
+	   <span style="color: #666666">{</span>System<span style="color: #666666">.</span><span style="color: #4070a0">out</span><span style="color: #666666">.</span><span style="color: #4070a0">println</span><span style="color: #666666">(</span><span style="color: #4070a0">&quot;char starting value is = null character&quot;</span><span style="color: #666666">);</span> <span style="color: #666666">}</span>
+   <span style="color: #666666">}</span>
+<span style="color: #666666">}</span>
+</pre></div>
+		   <h3>output</h3>
+		   <!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #902000">int</span> starting value is <span style="color: #666666">=</span> <span style="color: #40a070">0</span>
+<span style="color: #902000">float</span> starting value is <span style="color: #666666">=</span> <span style="color: #40a070">0.0</span>
+<span style="color: #902000">double</span> starting value is <span style="color: #666666">=</span> <span style="color: #40a070">0.0</span>
+<span style="color: #902000">char</span> starting value is <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">null</span> character
+</pre></div>
+
 		   
 <h2><b><u><en>PROGRAM</en></u></b></h2>
 <img src="/img/array-min[1].JPG" class="img-responsive" />
