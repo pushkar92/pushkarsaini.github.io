@@ -218,64 +218,119 @@ button a {
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2>Conditional statements and loopy Loops</h2>
-            </div>
-           <div style="margin-left:2%;margin-top:2%">
+               <p><span style="font-size: medium; color: #00ccff;"><strong>What are conditional statements in Java ?</strong></span></p>
+<p>When we want some statement(s) to execute on certain conditions and other statement(s) on different conditions, we use conditional statements.</p>
+<h2>&nbsp;THE if STATEMENT</h2>
+<p>The if statement lets us execute statement(s) depending upon the result of test condition.</p>
+<p>The result of test condition is always a boolean value - true or false.</p>
+<p>If the condition evaluates to true. Then the statement(s) will execute.</p>
+<p>If the condition evaluates to false, then statments(s) will be skipped and the control will be send to the statement(s) after the if block.</p>
+<p><em>&nbsp;</em></p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #f0f0f0; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #007020; font-weight: bold;">if</span><span style="color: #666666;">(</span> condition <span style="color: #666666;">)</span>
+ statement<span style="color: #666666;">;</span>
 
-           <p><span style="font-size: medium; color: #00ccff;"><strong>What are various &nbsp;conditional statements in Java ?</strong></span></p>
-<p>When we want some code to execute on certain conditions and other on different conditions, we use conditional statements.The conditional statements in java has a form :</p>
-<p></p>
-<p><em>if (condition) {</em></p>
-<p><em>// if the condition is true</em></p>
-<p><em>// execute these statements :</em></p>
-<p><em>//statement1;</em></p>
-<p><em>//statements2;</em></p>
-<p><em>}</em></p>
+<span style="color: #60a0b0; font-style: italic;">// for multiple statements</span>
+
+<span style="color: #007020; font-weight: bold;">if</span><span style="color: #666666;">(</span> condition <span style="color: #666666;">)</span>
+<span style="color: #666666;">{</span>
+   statement1<span style="color: #666666;">;</span>
+   statement2<span style="color: #666666;">;</span>
+<span style="color: #666666;">}</span>
+</pre>
+</div>
 <p>&nbsp;</p>
-<p>The condition must be surrounded by parenthesis. Curly braces are optional if onlyone statement follows but mandatory if more than one statements are present.</p>
+<p>The condition must be surrounded by parenthesis. Curly braces are optional if only one statement follows but mandatory if more than one statements are present.</p>
 <p>FOR EXAMPLE :</p>
 <p>&nbsp;</p>
-<p><em>if ( your age &gt;=18 ) {</em></p>
-<p><em>&nbsp;System.out.println("you can vote");</em></p>
-<p><em>}</em></p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #f0f0f0; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<table>
+<tbody>
+<tr>
+<td>
+<pre style="margin: 0; line-height: 125%;">1
+2
+3
+4
+5
+6
+7</pre>
+</td>
+<td>
+<pre style="margin: 0; line-height: 125%;"><span style="color: #007020; font-weight: bold;">public</span> <span style="color: #007020; font-weight: bold;">class</span> <span style="color: #0e84b5; font-weight: bold;">Hello</span>
+<span style="color: #666666;">{</span>
+<span style="color: #007020; font-weight: bold;">public</span> <span style="color: #007020; font-weight: bold;">static</span> <span style="color: #902000;">void</span> <span style="color: #06287e;">main</span><span style="color: #666666;">(</span>String<span style="color: #666666;">[]</span> args<span style="color: #666666;">)</span>
+<span style="color: #666666;">{</span>
+<span style="color: #007020; font-weight: bold;">if</span> <span style="color: #666666;">(</span> your age <span style="color: #666666;">&gt;=</span><span style="color: #40a070;">18</span> <span style="color: #666666;">)</span> System<span style="color: #666666;">.</span><span style="color: #4070a0;">out</span><span style="color: #666666;">.</span><span style="color: #4070a0;">println</span><span style="color: #666666;">(</span><span style="color: #4070a0;">"you can vote"</span><span style="color: #666666;">);</span>
+<span style="color: #666666;">}</span>
+<span style="color: #666666;">}</span>
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>&nbsp;</p>
-<p>IF ELSE STATEMENTS - If a condition fails then execute statements present inside else</p>
-<p><em>if (condition )</em></p>
-<p><em>{</em></p>
-<p><em>//condition is true</em></p>
-<p><em>//execute these statements; &nbsp; &nbsp; &nbsp;</em></p>
-<p><em>}</em></p>
-<p><em>else</em></p>
-<p><em>{</em></p>
-<p><em>// if condition is false then all statements inside if block will be ignored and else part will execute</em></p>
-<p><em>//execute these statements;</em></p>
-<p><em>}</em></p>
+<h2>THE else STATEMENT</h2>
+<p>When the if condition evaluates to false, the else statement(s) will get executed.</p>
 <p>&nbsp;</p>
-<p>There are many combinations of nested conditional statements :</p>
-<p>For e.g. nested if statements</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #f0f0f0; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #007020; font-weight: bold;">if</span> <span style="color: #666666;">(</span>condition <span style="color: #666666;">)</span>
+<span style="color: #666666;">{</span>
+<span style="color: #60a0b0; font-style: italic;">//condition is true</span>
+<span style="color: #60a0b0; font-style: italic;">//execute these statements;      </span>
+<span style="color: #666666;">}</span>
+<span style="color: #007020; font-weight: bold;">else</span>
+<span style="color: #666666;">{</span>
+<span style="color: #60a0b0; font-style: italic;">// if condition is false then all statements inside if block will be ignored </span>
+<span style="color: #60a0b0; font-style: italic;">//and else part will be executed</span>
+<span style="color: #60a0b0; font-style: italic;">//execute these statements;</span>
+<span style="color: #666666;">}</span>
+</pre>
+</div>
 <p>&nbsp;</p>
-<p><em>if ( condition1 ) {</em></p>
-<p><em>if (condition 2)</em></p>
-<p><em>&nbsp; { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</em></p>
-<p><em>//statements;</em></p>
-<p><em>&nbsp;if (condition3)</em></p>
-<p><em>&nbsp; &nbsp; &nbsp; { &nbsp;// statements; }</em></p>
-<p><em>&nbsp; &nbsp;}</em></p>
-<p><em>}</em></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>Below is the format of NESTED if else. If inside if,else inside else, similarly many combinations possible</p>
-<p><em>if(condition1) {</em></p>
-<p><em>//statement;</em></p>
-<p><em>}</em></p>
-<p>&nbsp;</p>
-<p><em>else if (condition 2) {</em></p>
-<p><em>//statement;</em></p>
-<p><em>}</em></p>
-<p><em>else if (condition 3) {</em></p>
-<p><em>//statements;</em></p>
-<p><em>}</em></p>
+
+	<h2>NESTED if STATEMENT</h2>
+<p>It allows one if statement to be written inside another if statement.</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #f0f0f0; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #007020; font-weight: bold;">if</span><span style="color: #666666;">(</span> condition <span style="color: #40a070;">1</span> <span style="color: #666666;">)</span> 
+<span style="color: #666666;">{</span>
+   <span style="color: #007020; font-weight: bold;">if</span><span style="color: #666666;">(</span> condition <span style="color: #40a070;">2</span> <span style="color: #666666;">)</span>
+   <span style="color: #666666;">{</span>          
+     <span style="color: #60a0b0; font-style: italic;">//statement(s);</span>
+   <span style="color: #666666;">}</span>
+   <span style="color: #007020; font-weight: bold;">else</span>
+   <span style="color: #666666;">{</span>
+     <span style="color: #60a0b0; font-style: italic;">//statement(s);</span>
+   <span style="color: #666666;">}</span>
+<span style="color: #666666;">}</span>
+</pre>
+</div>
+<h2>&nbsp;</h2>
+<h2>THE if-else LADDER</h2>
+<p>It is a sequence of if-else statements.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">if</span><span style="color: #666666">(</span> condition <span style="color: #40a070">1</span> <span style="color: #666666">)</span> 
+<span style="color: #666666">{</span>
+  <span style="color: #60a0b0; font-style: italic">//statement(s);</span>
+<span style="color: #666666">}</span>
+  <span style="color: #007020; font-weight: bold">else</span> <span style="color: #06287e">if</span> <span style="color: #666666">(</span> condition <span style="color: #40a070">2</span> <span style="color: #666666">)</span> 
+   <span style="color: #666666">{</span>
+      <span style="color: #60a0b0; font-style: italic">//statement(s);</span>
+   <span style="color: #666666">}</span>
+     <span style="color: #007020; font-weight: bold">else</span> <span style="color: #06287e">if</span> <span style="color: #666666">(</span> condition <span style="color: #40a070">3</span> <span style="color: #666666">)</span> 
+     <span style="color: #666666">{</span>
+       <span style="color: #60a0b0; font-style: italic">//statement(s);</span>
+     <span style="color: #666666">}</span>
+</pre></div>
+	    
+		    
+		    
+
 
 <br>
                 
