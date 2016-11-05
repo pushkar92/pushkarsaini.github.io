@@ -332,7 +332,33 @@ button a {
        <span style="color: #60a0b0; font-style: italic">//statement(s);</span>
      <span style="color: #666666">}</span>
 </pre></div>
-	    
+	
+<h2>THE switch STATEMENT</h2>
+<p>It has the same functionality as the if-else ladder but it's more easier to work with.</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #f0f0f0; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #007020; font-weight: bold;">switch</span><span style="color: #666666;">(</span> expression <span style="color: #666666;">)</span>
+<span style="color: #666666;">{</span>
+  <span style="color: #007020; font-weight: bold;">case</span> <span style="color: #002070; font-weight: bold;">value1:</span>
+     statement<span style="color: #666666;">(</span>s<span style="color: #666666;">);</span>
+     <span style="color: #007020; font-weight: bold;">break</span><span style="color: #666666;">;</span>
+  <span style="color: #007020; font-weight: bold;">case</span> <span style="color: #002070; font-weight: bold;">value2:</span>
+     statement<span style="color: #666666;">(</span>s<span style="color: #666666;">);</span>
+      <span style="color: #007020; font-weight: bold;">break</span><span style="color: #666666;">;</span>
+  <span style="color: #007020; font-weight: bold;">default</span><span style="color: #666666;">:</span>
+      <span style="color: #007020; font-weight: bold;">default</span> <span style="color: #06287e;">statement</span><span style="color: #666666;">(</span>s<span style="color: #666666;">);</span>
+<span style="color: #666666;">}</span>
+</pre>
+</div>
+<p>&nbsp;Expression must have value of type byte, char, short or int. This value is compared against values of all the cases.</p>
+<div style="border: 2px solid black ; text-align:center;">
+<h4>INTERESTING POINT:</h4>
+<p>Switch statement is upgraded in Java 7.Now, Strings can be used inside the switch statement.</p>
+</div>
+<p>&nbsp;Values after the case keyword have to be constants.</p>
+<p>The case that matches the value, statement(s) of that case will get executed.</p>
+<p>If execution reaches the break statement, then switch statement will end.</p>
+<p>When execution does not find break statement, the case that matches the value of expression and all the cases after it will get executed.</p>	    
 		    
 		    
 
