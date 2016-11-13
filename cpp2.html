@@ -67,18 +67,7 @@ font-size:185%;
 
 <body>
 <script type="text/javascript">
-$(function(){
-    $('#myModal').on('show.bs.modal', function(){
-        var myModal = $(this);
-        clearTimeout(myModal.data('hideInterval'));
-        myModal.data('hideInterval', setTimeout(function(){
-            myModal.modal('hide');
-        }, 8000));
-    });
-});
-    $(document).ready(function(){
-        $('#myModal').modal('show');
-    });
+
 </script>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
