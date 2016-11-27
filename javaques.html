@@ -308,7 +308,35 @@
 <p style="text-align: left;"><span style="font-size: large; ">=&gt; It will compile successfully if you declare return type other than void but will give runtime - "Error: Main method must return a value of type void in class yourClassName, please define the main method as: public static void main(String[] args) ". Java language specification says that on "Execution- Virtual Machine Start up(12.1.4)&nbsp; main method must be declared as public static void and must accept single argument of array of String.</span><span style="font-size: large; "><br /></span><span style="font-size: large; "><br /></span></span></p>
  </div>
 
+<p><br /></p>
+<div     class="block">
+<p style="text-align: center;"><span style="font-size: large; "> Can we declare the abstract class as final ?</span></p>
+<p style="text-align: left;"><span style="font-size: large; ">=&gt;
+	No, you can declare class either abstract or final, but not both.We know that abstract class cannot be 
+	instantiated and a class declared as final will not let itself derived.We have to inherit the abstract class 
+	by the class which will implements all its missing functionality and will access all its method to execute them.
+	</span><span style="font-size: large; "><br /></span><span style="font-size: large; "><br /></span></p>
+ </div>
+		<p><br /></p>
+<div     class="block">
+<p style="text-align: center;"><span style="font-size: large; "> Name two classes that declared as final in Java API ?</span></p>
+<p style="text-align: left;"><span style="font-size: large; ">=&gt;
+	String and Math -> java.lang.String and java.lang.Math 
+	</span><span style="font-size: large; "><br /></span><span style="font-size: large; "><br /></span></p>
+ </div>
 
+	    		<p><br /></p>
+<div     class="block">
+<p style="text-align: center;"><span style="font-size: large; "> In what ways final keyword is used in Java ?</span></p>
+<p style="text-align: left;"><span style="font-size: large; ">=&gt;
+	final is used with variable to declare it as a constant.<br />
+	final is used with method to stop it from being overriden by methods from subclasses.<br />
+	final is used with class to stop it from being inherited by other classes.
+	</span><span style="font-size: large; "><br /></span><span style="font-size: large; "><br /></span></p>
+ </div>
+
+	    
+	    
 <p><br /></p>
 
 <div     class="block">
@@ -317,9 +345,8 @@
 - String class is final and immutable i.e. once it is created, its content cannot be changed and a new object is created to address that change. It is stored in "String-pool". <br>
 - StringBuilder and String Buffer both are mutable i.e. the same object is modified, no new object is created.<br>
 - String Buffer is thread safe (synchronized) whereas String Builder is not thread safe(non-synchronized).<br>
-- String Builder is faster than String Buffer (only slightly due to the point above)</span><span style="font-size: large; "><br /></span><span style="font-size: large; "><br /></span></span></p>
- </div>
-
+- String Builder is faster than String Buffer (only slightly due to the point above)</span><span style="font-size: large; "><br /></span><span style="font-size: large; "><br /></span></p>
+	</div>
 
 <p><br /></p>
 
