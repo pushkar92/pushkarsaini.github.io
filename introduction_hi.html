@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 
-    
-    
-    
+
+
+
+
     <meta charset="utf-8">
     <title>Java Tutorial : Learn Java from Scratch</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Learn Java from scratch with Introduction to Java. Java tutorial or Core Java tutorial is important before starting advance Java tutorial">
-<meta name="keywords" content="Learn Java from scratch,Introduction to Java,Java tutorial,Core Java tutorial,Advance Java tutorial,java ,what is java , java programming language , what is java programming langage , features of java , java , history of java , rules of java , how to set path in java , how to save file in java , how to run program in java ">
-<meta name="author" content="Sandhya and Poornima">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="हिंदी में जावा सीखें ">
+    <meta name="keywords" content="जावा, जावा प्रोग्रामिंग लैंग्वेज क्या है, जावा प्रोग्रामिंग लैंगेज, जावा की विशेषताएं, जावा का इतिहास, जावा के नियम, जावा में पथ कैसे सेट करें,जावा में प्रोग्राम को कैसे बनाये">
+    <meta name="author" content="Sandhya and Poornima">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <style>
-     button a{color:white;}
-	   
-	    .glyphicon.glyphicon-arrow-right{ font-size: 40px; }
-	    .glyphicon.glyphicon-arrow-left{ font-size: 40px;}
+        button a {
+            color: white;
+        }
 
-	    
-</style>
+        .glyphicon.glyphicon-arrow-right {
+            font-size: 40px;
+        }
+
+        .glyphicon.glyphicon-arrow-left {
+            font-size: 40px;
+        }
+    </style>
 
     <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
 
     <link href="css/charisma-app.css" rel="stylesheet">
-   
+
     <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
 
 
@@ -35,28 +41,30 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
- <!-- The fav icon -->
+    <!-- The fav icon -->
     <link rel="shortcut icon" href="img/logo.png">
-    
+
 
 </head>
-<style>body{font-family: 'Ubuntu', sans-serif;
-font-size:185%;
+<style>
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 185%;
 </style>
 
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
- 
-<script type="text/javascript">
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-</script>
+    <script type="text/javascript">
+
+    </script>
     <!-- topbar starts -->
     <div class="navbar navbar-default" role="navigation">
 
@@ -67,393 +75,763 @@ font-size:185%;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> 
-                <span>Java Just</span></a>
+            <a class="navbar-brand" href="index.html">
+                <span>Java Just</span>
+            </a>
 
             <!-- user dropdown starts -->
-        
+
             <!-- user dropdown ends -->
 
             <!-- theme selector starts -->
             <div class="btn-group pull-right theme-container animated tada">
                 <div class="social-icons">
-            <ul class="collapse navbar-collapse nav navbar-nav top-menu share-buttons">
-                 <li><div class="fb-like" data-href="https://www.facebook.com/JavaJustInTime" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div></li>
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjavajust.com%2F&t=Java%20Just%20In%20Time" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/img/Facebook.svg" style="height:30px;width:20px;"></a></li>
-  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fjavajust.com%2F&text=Java%20Just%20In%20Time:%20http%3A%2F%2Fjavajust.com%2F" target="_blank" title="Tweet"><img alt="Tweet" src="/img/Twitter.svg" style="height:30px;width:20px;"></a></li>
-  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fjavajust.com%2F" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/img/Google+.svg" style="height:30px;width:20px;"></a></li>
-  <li><a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fjavajust.com%2F&t=Java%20Just%20In%20Time&s=" target="_blank" title="Post to Tumblr"><img alt="Post to Tumblr" src="/img/Tumblr.svg" style="height:30px;width:20px;"></a></li>
-  <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fjavajust.com%2F&description=Learn%20JAVA%20and%20C%2B%2B%20just%20in%20time.Practise%20INTERVIEW%20questions.Get%20through%0A%20%20%20%20ICSE%20BOARD%20and%20CBSE%20BOARD%20questions%20and%20answers." target="_blank" title="Pin it"><img alt="Pin it" src="/img/Pinterest.svg" style="height:30px;width:20px;"></a></li>
-  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fjavajust.com%2F&title=Java%20Just%20In%20Time&summary=Learn%20JAVA%20and%20C%2B%2B%20just%20in%20time.Practise%20INTERVIEW%20questions.Get%20through%0A%20%20%20%20ICSE%20BOARD%20and%20CBSE%20BOARD%20questions%20and%20answers.&source=http%3A%2F%2Fjavajust.com%2F" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/img/LinkedIn.svg" style="height:30px;width:20px;"></a></li>
-  <li><a href="mailto:?subject=Java%20Just%20In%20Time&body=Learn%20JAVA%20and%20C%2B%2B%20just%20in%20time.Practise%20INTERVIEW%20questions.Get%20through%0A%20%20%20%20ICSE%20BOARD%20and%20CBSE%20BOARD%20questions%20and%20answers.:%20http%3A%2F%2Fjavajust.com%2F" target="_blank" title="Send email"><img alt="Send email" src="/img/Email.svg" style="height:30px;width:20px;"></a></li>
-  <li>
-                    <div class="g-plusone" data-annotation="inline" data-width="120"   data-href="http://javajust.com"></div>
-                </li>
-            </ul>
-</div>
+                    <ul class="collapse navbar-collapse nav navbar-nav top-menu share-buttons">
+                        <li>
+                            <div class="fb-like" data-href="https://www.facebook.com/JavaJustInTime" data-layout="standard" data-action="like" data-size="large"
+                                data-show-faces="false" data-share="true"></div>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjavajust.com%2F&t=Java%20Just%20In%20Time" title="Share on Facebook"
+                                target="_blank">
+                                <img alt="Share on Facebook" src="/img/Facebook.svg" style="height:30px;width:20px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fjavajust.com%2F&text=Java%20Just%20In%20Time:%20http%3A%2F%2Fjavajust.com%2F"
+                                target="_blank" title="Tweet">
+                                <img alt="Tweet" src="/img/Twitter.svg" style="height:30px;width:20px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=http%3A%2F%2Fjavajust.com%2F" target="_blank" title="Share on Google+">
+                                <img alt="Share on Google+" src="/img/Google+.svg" style="height:30px;width:20px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fjavajust.com%2F&t=Java%20Just%20In%20Time&s=" target="_blank" title="Post to Tumblr">
+                                <img alt="Post to Tumblr" src="/img/Tumblr.svg" style="height:30px;width:20px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fjavajust.com%2F&description=Learn%20JAVA%20and%20C%2B%2B%20just%20in%20time.Practise%20INTERVIEW%20questions.Get%20through%0A%20%20%20%20ICSE%20BOARD%20and%20CBSE%20BOARD%20questions%20and%20answers."
+                                target="_blank" title="Pin it">
+                                <img alt="Pin it" src="/img/Pinterest.svg" style="height:30px;width:20px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fjavajust.com%2F&title=Java%20Just%20In%20Time&summary=Learn%20JAVA%20and%20C%2B%2B%20just%20in%20time.Practise%20INTERVIEW%20questions.Get%20through%0A%20%20%20%20ICSE%20BOARD%20and%20CBSE%20BOARD%20questions%20and%20answers.&source=http%3A%2F%2Fjavajust.com%2F"
+                                target="_blank" title="Share on LinkedIn">
+                                <img alt="Share on LinkedIn" src="/img/LinkedIn.svg" style="height:30px;width:20px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:?subject=Java%20Just%20In%20Time&body=Learn%20JAVA%20and%20C%2B%2B%20just%20in%20time.Practise%20INTERVIEW%20questions.Get%20through%0A%20%20%20%20ICSE%20BOARD%20and%20CBSE%20BOARD%20questions%20and%20answers.:%20http%3A%2F%2Fjavajust.com%2F"
+                                target="_blank" title="Send email">
+                                <img alt="Send email" src="/img/Email.svg" style="height:30px;width:20px;">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="g-plusone" data-annotation="inline" data-width="120" data-href="http://javajust.com"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-      
 
-          
 
-          
+
+
+
 
         </div>
     </div>
-       <!-- topbar ends -->
-<div class="ch-container">
-    <div class="row">
-        
-        <!-- left menu starts -->
-        <div class="col-sm-2 col-lg-2">
-            <div class="sidebar-nav" style="width:110%;">
-                <div class="nav-canvas">
-                    <div class="nav-sm nav nav-stacked">
+    <!-- topbar ends -->
+    <div class="ch-container">
+        <div class="row">
 
+            <!-- left menu starts -->
+            <div class="col-sm-2 col-lg-2">
+                <div class="sidebar-nav" style="width:110%;">
+                    <div class="nav-canvas">
+                        <div class="nav-sm nav nav-stacked">
+
+                        </div>
+                        <ul class="nav nav-pills nav-stacked main-menu">
+                            <li>
+                                <a class="ajax-link" href="index.html">
+                                    <i class="glyphicon glyphicon-home"></i>
+                                    <span> Home </span>
+                                </a>
+                            </li>
+                            <li class="accordion">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                    <span> जावा</span>
+                                </a>
+                                <ul class="nav nav-pills nav-stacked  smart">
+                                    <li>
+                                        <a class="ajax-link" href="introduction.html">
+                                            <span> जावा का परिचय</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="data-type-literals_hi.html">
+                                            <span> Data Type and Literals(डाटा टाइप और लिटरल्स)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="taking-input_hi.html">
+                                            <span> Taking input (इंटरेक्टिव इनपुट)</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="ajax-link" href="loops_hi.html">
+                                            <span>Loops and Switch statements</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="array_hi.html">
+                                            <span>Arrays</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="accordion">
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                            <span> OOPS</span>
+                                        </a>
+                                        <ul class="nav nav-pills nav-stacked  smart">
+
+                                            <li>
+                                                <a class="ajax-link" href="oops_hi.html">
+                                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                                    <span> Concept of OOPS </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="ajax-link" href="inheritance_hi.html">
+                                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                                    <span> Inheritance </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="ajax-link" href="abstract_hi.html">
+                                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                                    <span> Abstraction </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="ajax-link" href="poly_hi.html">
+                                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                                    <span> Polymorphism </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="exception_hi.html">
+                                            <span>Exception Handling</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="javaques_hi.html">
+                                            <span> Java Interview Questions And Answers</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="accordion">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                                    <span> C++</span>
+                                </a>
+                                <ul class="nav nav-pills nav-stacked  smart">
+
+                                    <li>
+                                        <a class="ajax-link" href="http://javajust.com/cpp_hi.html">
+                                            <i class="glyphicon glyphicon-home"></i>
+                                            <span> Introduction to C++</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="http://javajust.com/cpdata_hi.html">
+                                            <i class="glyphicon glyphicon-eye-open">
+                                            </i>
+                                            <span> Data Type and Literals</span>
+                                        </a>
+                                    </li>
+                            </li>
+                            <li>
+                                <a class="ajax-link" href="http://javajust.com/cpp2_hi.html">
+                                    <span> OOP's</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ajax-link" href="http://javajust.com/cpp3_hi.html">
+                                    <span> Class Members</span>
+                                </a>
+                            </li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="http://javajust.com/policy_hi.html" title="click" class="">
+                                    <i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Privacy Policy </a>
+                            </li>
+                            <li>
+                                <a href="http://javajust.com/contact_hi.html" title="click" class="">
+                                    <i class=" glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;Contact us </a>
+                            </li>
+                            <li>
+                                <a href="http://javajust.com/aboutus_hi.html" title="click" class="">
+                                    <i class="glyphicon glyphicon-file"></i>&nbsp;&nbsp;About</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="nav nav-pills nav-stacked main-menu">
-                        <li><a class="ajax-link" href="index.html"><i class="glyphicon glyphicon-home"></i><span> Home </span></a></li>
-						<li class="accordion">
-                            <a href="#"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> जावा</span></a>
-                            <ul class="nav nav-pills nav-stacked  smart">
-                        <li><a class="ajax-link" href="introduction.html"><span> जावा का परिचय</span></a></li>
-                        <li><a class="ajax-link" href="data-type-literals_hi.html"><span> Data Type and Literals(डाटा टाइप और लिटरल्स)</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="taking-input_hi.html"><span> Taking input (इंटरेक्टिव इनपुट)</span></a>
-                        </li>
-                         
-<li><a class="ajax-link" href="loops_hi.html"><span>Loops and Switch statements</span></a>
-</li>
-                        <li><a class="ajax-link" href="array_hi.html"><span>Arrays</span></a>
-</li>
-
-<li class="accordion">
-                            <a href="#"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> OOPS</span></a>
-                            <ul class="nav nav-pills nav-stacked  smart">
-                           
-<li><a class="ajax-link" href="oops_hi.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Concept of OOPS </span></a>
-</li>
-<li><a class="ajax-link" href="inheritance_hi.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Inheritance </span></a>
-</li>
-<li><a class="ajax-link" href="abstract_hi.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Abstraction </span></a>
-</li>
-<li><a class="ajax-link" href="poly_hi.html"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> Polymorphism </span></a>
-</li>
-</ul></li>
- <li><a class="ajax-link" href="exception_hi.html"><span>Exception Handling</span></a>
-</li>
- <li><a class="ajax-link" href="javaques_hi.html"><span> Java Interview Questions And Answers</span></a>
-</li>
-
-                  </ul></li>
-<li class="accordion">
-                            <a href="#"><i class="glyphicon glyphicon-circle-arrow-right"></i><span> C++</span></a>
-                            <ul class="nav nav-pills nav-stacked  smart">
-
-                        <li><a class="ajax-link" href="http://javajust.com/cpp_hi.html"><i class="glyphicon glyphicon-home"></i><span> Introduction to C++</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="http://javajust.com/cpdata_hi.html"><i class="glyphicon glyphicon-eye-open">
-                </i><span> Data Type and Literals</span></a>
-                        </li>
-                        </li>
-                        <li><a class="ajax-link" href="http://javajust.com/cpp2_hi.html">
-                <span> OOP's</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="http://javajust.com/cpp3_hi.html">
-                <span> Class Members</span></a>
-                        </li>
-</ul></li>
-   <li>   <a href="http://javajust.com/policy_hi.html" title="click" class=""><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Privacy Policy </a></li>
-				<li><a href="http://javajust.com/contact_hi.html" title="click" class=""><i class=" glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;Contact us </a></li>
-			<li>	<a href="http://javajust.com/aboutus_hi.html" title="click" class=""><i class="glyphicon glyphicon-file"></i>&nbsp;&nbsp;About</a></li>
-				  </ul></div>
+                </div>
             </div>
-        </div>
-        <!--/span-->
-        <!-- left menu ends -->
+            <!--/span-->
+            <!-- left menu ends -->
             <!-- content starts -->
 
 
 
-<div id="content" class="col-lg-10 col-sm-10">    
-    <div class="box col-md-12">
-        <div class="box-inner">
-            <div class="box-header well">
-                <h2> Introduction to Java</h2>
-            </div>
-           <div style="margin-left:2%;margin-top:2%">
- बहुत से लोग ऐसे ट्यूटोरियल की तलाश में हैं जिनसे वो शरूआत से ही जावा सीख सकें। वो हमेशा पूछते रहते हैं कि आसानी से और जल्दी जावा कैसे सीख सकते हैं। वैसे तो बहुत से जावा ट्यूटोरियल उपलब्ध हैं। हमने ऐसी सामग्री तैयार की है जो आपको शुरूआत से जावा सीखने में मदद करेगी। अगर आपको C++ आती है तो आप जावा बहुत जल्दी सीख जायेंगे क्योंकि दोनों को कॉन्सेपट एक जैसा ही है। हमारे जावा ट्यूटोरियल जावा के रिफ्रेशरस को जावा के इंटरव्यू की सामग्री भी प्रदान करते हैं। चलिए हम जावा का परिचय इंटरव्यू में अक्सर पूछे जाने वाले सवाल से करते हैं,  “जावा और में क्या अंतर है?"
-		   
-	<div style="margin-left: 2%; margin-top: 2%;">
-<h2><span style="text-decoration: underline; font-size: x-large;"><span style="color: #00ccff; text-decoration: underline;"><strong>जावा और C++ में अंतर</strong></span></span></h2>
-<p>&nbsp;</p>
-<div class="table-responsive">
-<table class="table-bordered" style="border-color: blue; background-color: pink; width:94%;">
-<tbody>
-<tr>
-<td style="text-align: center;">C++</td>
-<td style="text-align: center;">जावा</td>
-</tr>
-<tr>
-<td>यह पलेटफोर्म डिपेंडेंट  होती है।</td>
-<td>यह पलेटफोर्म डिपेंडेंट नहीं होती है।</td>
-</tr>
-<tr>
-<td>इसमें सिर्फ कंपाइलर का उपयोग होता है</td>
-<td>इसमें कंपाइलर और इंटरप्रेटर दोनों का प्रयोग होता है</td>
-</tr>
-<tr>
-<td>इसमें  स्ट्रकचर (structure), यूनियन (union) और टेंपलेट (templates) होती है </td>
-<td>इसमें स्ट्रकचर (structure), यूनियन (union) और टेंपलेट (templates) नहीं होते।</td>
-</tr>
-<tr>
-<td>यह ऑपरेटर और मेथड ओवरलोडिंग दोनों का समर्थन करता है</td>
-<td>यह सिर्फ मेथड ऑवलोडिंग को स्पोर्ट करती है</td>
-</tr>
-<tr>
-<td>इसमें पॉइंटर (pointers) का उपयोग होता है </td>
-<td>इसमें पोइंटर का सीधे समर्थन नहीं होता । इसमें पोइंटर का  इस्तेमाल पहली क्लास की भाषा की अवधारणा (First Class Language Concept) की तरह नहीं होता बल्कि जावा का संदर्भ के विवरण को बढ़ाने के लिए होता है।</td>
-</tr>
-<tr>
-<td>इसके पास थ्रेड के लिए कोई बुल्ट-इन समर्थन नहीं होता (मल्टीथ्रेडिंग)</td>
-<td>यह मल्टीथ्रेडींग को स्पोर्ट करती है</td>
-</tr>
-<tr>
-<td>ये कई इनहेरिटेन्स को स्पोरट करती है, क्लासिक डायमंड जैसी दिक्कतों के लिए वर्चुअल क्लास कोन्स्पट (virtual classes concept) का इस्तेमाल करें।</td>
-<td>यह विभिन्न (multiple) इनहेरिटेन्स का समर्थन नहीं करती। यह (multiple) विभिन्न इनहेरिटेन्स के नियम को लागू करने के लिए इंटरफेस का प्रयोग करती है।</td>
-</tr>
-<tr>
-<td>इसमें स्कोप रेजोल्यूशन ऑपरेटर [Scope Resolution Operator(::)] और डिस्ट्रकटर होता है।</td>
-<td>इसमें कोई भी स्कोप रेसोल्यूशन ऑपरेटर और डिस्ट्रकटर नहीं होता।.</td>
-</tr>
-<tr>
-<td>इसमें स्पष्ट स्मृति प्रबंधन (Explicit Memory Management) की आवश्यकता होती है।</td>
-<td>इसमें कचरा स्वत: ही संग्रह हो जाता है।</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2><span style="text-decoration: underline; font-size: x-large;"><span style="color: #00ccff; text-decoration: underline;"><strong>जावा क्या है ?</strong></span></span></h2>
-<p>&nbsp;</p>
-<p><span >जावा एक ऑबजेक्ट ऑरिएंटड और मंच से स्वतंत्र (प्लैटफोर्म इंडिपेडेंट) भाषा है जो कि जानकारी प्राप्त करने के लिए यूसर को वैब सरवर, डाटाबेस और सूचना प्रदाता से जोड़ती है।</span>.</p>
-<p>&nbsp;</p>
-<div>
-<h2><span style="text-decoration: underline; font-family: arial black,avant garde; font-size: x-large; color: #00ccff;"><strong>जावा का इतिहास</strong></span></h2>
-<p>&nbsp;</p>
-<p><span >1991 में, पैट्रिक नोटेनन और जेम्स गोसलिंग ने मिलकर सन इंजीनियर्स का ग्रुप बनाया। वे अत्यधिक क्रियाशील और सशक्त प्रोग्रामिंग भाषा बनाना चाहते थे जो कि केबल TV, स्विच बोक्सों आदि के लिए भी इस्तेमाल की जा सके।</span></p>
-<p><span >जेम्स ने इस भाषा का नाम - "Oak" रखा था। लेकिन बाद में सन इंजीनियरों को एहसास हुआ कि Oak नाम की कम्पूयटर भाषा पहले से मौजूद है, इसलिए उन्होंने इसका नाम जावा रख दिया। 1994 में, सन इंजीनियरों ने एक शानदार ब्राउज़र बनाने के बारे में सोचा। जावा की ताकत दिखाने वाले इस ब्राउज़र को होटजावा लिखा जाता है जिसको अब एप्लेट कहते हैं। यह तकनीक 23 मई 1995 को सनवर्ल्ड में दिखाई गई थी। 1996 की शुरूआत में इन सन इंजीनियरों ने जावा का पहला संस्करण लांच किया था।</span></p>
-</div>
-<p><span >&nbsp;</span></p>
-<h2><span style="text-decoration: underline; font-size: x-large; color: #00ccff;"><em>यह 4 कोर तकनीकों में बंटी हुई है</em></span></h2>
-<ul>
-<li>
-<p><span >डेस्कटोप और कॉन्सोल पर आधारित एप्लीकेशनों को बनाने के लिए -जावा स्टैंडर्ड एडीशन (जावा एस ई) [Java Standard Edition (Java SE)]<br /></span></p>
-</li>
-<li>
-<p><span >सरवर साइड एप्लीकेशन, मल्टी टिअर्ड और वेब-आधारित एप्लीकेशनों को बनाने के लिए - जावा एंटरप्राइज़ एडीशन (जावा ई ई) [Java Enterprise Edition (Java EE)]<br /></span></p>
-</li>
-<li>
-<p><span >सैल-फोन, व्यक्तिगत डिजिटल सहायक जैसी माइक्रो-डिवाइसों को बनाने के लिए - जावा माइक्रो एडीशन (जावा एम ई) [Java Micro Edition (Java ME)]<br /></span></p>
-</li>
-<li>
-<p><span >जावा एफ एक्स [Java Fx]</span></p>
-</li>
-</ul>
-<p>&nbsp;</p>
-<h2><span style="color: #00ccff; font-size: x-large;"><strong><span style="text-decoration: underline;">Software आवश्यकतायें</span></strong></span></h2>
-<p>&nbsp;</p>
-<ol>
-<li>
-<p><span >जावा डेवल्पमेंट किट (जे डी के) [JDK]</span></p>
-</li>
-<li>
-<p><span >जावा रनटाइम एनवायरमेंट (जे आर ई) [JRE]</span></p>
-</li>
-<li>
-<p><span >इंटरग्रेटेड डैवल्पमेंट एनवायरमेंट (आइ डी ई) [IDE]</span></p>
-<ol>
-<li>
-<p><span >नेटबीन्स  NetBeans</span></p>
-</li>
-<li>
-<p><span >एक्लीप्स  Eclipse</span></p>
-</li>
-<li>
-<p><span >विज़ुअल ऐज़ Visual Age</span></p>
-</li>
-<li>
-<p><span >जे डैवल्पर  JDeveloper</span></p>
-<p><span >&nbsp;</span></p>
-</li>
-</ol>
-<p>&nbsp;</p>
-</li>
-</ol>
-<h2><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong> जावा रनटाइम एनवायरमेंट (जे आर ई) [JRE] </strong></span></span></h2>
-<p>&nbsp;</p>
-<p><span > इसमें जावा डैवलमैंट किट (जे डी के), डैवल्पमेंट टूल और एप्लीकेशन प्रोग्रामिंग (ए पी आई) शामिल है।</span></p>
-<p>एप्लीकेशन प्रोग्रामिंग इंटरफेस (ए पी आइ); क्लास, विधि और पैकेज की फोर्म में मिलने वाले इंटरफेस का समूह है। </p>
-<p>=&gt; APPLICATION PROGRAMMING PACKAGES  एप्लीकेशन प्रोग्रामिंग पैकेज:</p>
-<ul>
-<li>java.lang – इसमें जावा प्रोगाम को डिजाइन करने वाली जरूरी क्लासें शामिल होती हैं।</li>
-<li>java.util – इसमें क्लेकशन क्लास, स्कैनर क्लास, तारीख और समय की क्लास जैसी उपयोगी क्लासें शामिल हैं।</li>
-<li>java.io – इसमें सिस्टम के इनपुट और आउटपुट के लिए क्लासेस शामिल हैं।</li>
-</ul>
-<p>=&gt; एप्लेट और नेटवर्किंग प्रोग्रामिंग पैकेज</p>
-<ul>
-<li>java.awt – इसमें यूज़र इंटरफेस और पेंटिंग ग्राफिक और तस्वीरें शामिल हैं।</li>
-<li>java.applet – इसमें एप्लेट को बनाने के लिए जरूरी क्लासे शामिल हैं।</li>
-<li>java.net – इसमें जावा की नेटवर्किंग को बढ़ाने वाली क्लासे शामिल हैं।</li>
-</ul>
-<p>=&gt; DATABASE CONNECTIVITY PACKAGES  डाटाबेस क्नेक्टीविटी पैकेज</p>
-<ul>
-<li>java.sql – इसमें क्लासें और डाटाबेस के साथ कनेक्शन बनाने वाले इंटरफेस और बनाने, बनाये रखने और संशोधित करने वाले डाटाबेस शामिल है।</li>
-<li>javax.sql - JDBC ऑप्शनल पैकेज।</li>
-</ul>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong>जावा डैवल्पमेंट किट (जे डी के) [JDK] </strong></span></span></p>
-<p>&nbsp;</p>
-<p><span > JDK, जावा प्रोग्राम को बनाने और चलाने का एक संग्रह है। JDK में आगे दिये गये डैवल्पमेंट टूल शामिल हैं :-</span></p>
-<ul>
-<li><span style="text-decoration: underline;"><strong>java </strong></span> =&gt; यह एक जावा का दुभाषिया है। यह बाइटेकोड (bytecode) फाइलों को पढ़ता और इंटरप्रेट करता है।</li>
-<li><span style="text-decoration: underline;"><strong>javac</strong></span> =&gt; यह एक जावा कंपाइलर है। यह सोर्स कोड को बाइटेकोड फाइलों में बदलता है। </li>
-<li><span style="text-decoration: underline;"><strong>javacdoc</strong></span> =&gt; यह जावा फाइलों के लिए HTML डोक्यूमेंटेशन बनाता है।</li>
-<li><span style="text-decoration: underline;"><strong>appletviewer</strong></span> =&gt; यह एप्लेट को चलाने के लिए प्रयोग किया जाता है।</li>
-<li><span style="text-decoration: underline;"><strong>javah</strong></span> =&gt; यह नैटिव हैडर को लिखने के लिए सी हैडर और स्टब जेनरेटर की तरह काम करता है।</li>
-<li><span style="text-decoration: underline;"><strong>jdb</strong></span> =&gt; यह जावा डिबगर है। यह जावा प्रोग्राम में गलतियों को ढूँढ़ता है।</li>
-<li><span style="text-decoration: underline;"><strong>javap</strong></span> =&gt;यह जावा डिसैंबल है। यह बाइटेकोड फाइलों को जावा प्रोगराम में बदलता है।</li>
-<li><span style="text-decoration: underline;"><em><strong>jar</strong></em></span> =&gt; यह जावा आर्चीव है।  यह पैकेज, सिंगल एक्जूक्यूटेबल जार फाइलों को पैकेज रिलेटेड क्लास लाइब्रेरी से संबंधित है और उन्हें संभालता है।</li>
-</ul>
-<p>&nbsp;</p>
-<p>We know that Compiler convert high level language into machine language.</p>
-<p>But in Java, Compiler translates the source code into an intermediate code known as Bytecode.We can say that the bytecode is a machine language for Java Virtual Machine (JVM). Bytecode is not machine specific(different operating systems).</p>
-<p>Interpreter of Java is used to generate the machine specific code.</p>
-<h2><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff; text-decoration: underline;"><strong> JAVA VIRTUAL MACHINE (JVM) </strong></span></span></h2>
-<p>JVM is an abstract computing machine that actually execute the Java programs.</p>
-<p>ClassLoader is part of JRE that loads classes in the JVM.</p>
-<p>&nbsp;</p>
-<p>NOTE: JRE , JDK and JVM is platform dependent because configuration of each operating system differs but Java is not platform dependent because the source code is converted into bytecode file which has instructions that have nothing to do with computer architecture.</p>
-<p>&nbsp;</p>
-	<img src="/img/jvm-min.JPG" class="img-responsive" />	
-		
-		
-		
-		
-		
-		
-<p><span >&nbsp;</span></p>
-<p>&nbsp;</p>
-<h2><span style="text-decoration: underline; color: #00ccff;"><span style="font-size: x-large;"><strong>Writing first Java Program</strong></span></span></h2>
-<p><span >&nbsp;</span></p>
-<ul>
-<li>
-<p><span >A java program file must have <strong>.java</strong> extension</span></p>
-</li>
-<li>
-<p><span >Every Java program must have some set of classes using <strong>class</strong> keyword</span></p>
-</li>
-</ul>
-<p>&nbsp;</p>
-<p><span >class &lt;ClassName&gt;</span></p>
-<p><span >{</span></p>
-<p><span >//members</span></p>
-<p><span >}</span></p>
-<ul>
-<li>
-<p><span >To execute a class it must have an entry point main()</span></p>
-<ul>
-<li>
-<p><span >public static void main(String args[])</span></p>
-</li>
-<li>
-<p><span >public static void main(String&hellip; args)</span></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff;"><strong>Syntactical Rules of Java</strong></span></span></h2>
-<p>&nbsp;</p>
-<ul>
-<li>
-<p><span >All keywords and package names must be in lower case</span></p>
-</li>
-<li>
-<p >All class and interface names must starts with capital letter</p>
-<p>For e.g.</p>
-<ul>
-<li>
+            <div id="content" class="col-lg-10 col-sm-10">
+                <div class="box col-md-12">
+                    <div class="box-inner">
+                        <div class="box-header well">
+                            <h2> Introduction to Java</h2>
+                        </div>
+                        <div style="margin-left:2%;margin-top:2%">
+                            बहुत से लोग ऐसे ट्यूटोरियल की तलाश में हैं जिनसे वो शरूआत से ही जावा सीख सकें। वो हमेशा पूछते रहते हैं कि आसानी से और जल्दी
+                            जावा कैसे सीख सकते हैं। वैसे तो बहुत से जावा ट्यूटोरियल उपलब्ध हैं। हमने ऐसी सामग्री तैयार की
+                            है जो आपको शुरूआत से जावा सीखने में मदद करेगी। अगर आपको C++ आती है तो आप जावा बहुत जल्दी सीख
+                            जायेंगे क्योंकि दोनों को कॉन्सेपट एक जैसा ही है। हमारे जावा ट्यूटोरियल जावा के रिफ्रेशरस को जावा
+                            के इंटरव्यू की सामग्री भी प्रदान करते हैं। चलिए हम जावा का परिचय इंटरव्यू में अक्सर पूछे जाने
+                            वाले सवाल से करते हैं, “जावा और में क्या अंतर है?"
 
-<p><span >Math</span></p>
-</li>
-<li>
-<p><span >String</span></p>
-</li>
-<li>
-<p><span >BufferedReader</span></p>
-</li>
-<li>
-<p><span >InputStreamReader</span></p>
-</li>
-</ul>
-</li>
-<li>
-<p><span >All field and methods starts with lower case letter</span></p>
-<p>For e.g.</p>
-<ul>
-<li>
-<p><span >length()</span></p>
-</li>
-<li>
-<p><span >readLine()</span></p>
-</li>
-<li>
-<p><span >substring()</span></p>
-</li>
-<li>
-<p><span >println()</span></p>
-</li>
-</ul>
-</li>
-</ul>
-<p>&nbsp;</p>
-<h2><span style="font-size: x-large; font-family: arial black,avant garde; color: #00ccff;"><strong>General Input/Output in Java</strong></span></h2>
-<p>&nbsp;</p>
-<p><span >Java provides built-in static objects under <strong>System</strong> class</span></p>
-<ul>
-<li>
-<p><span >in</span></p>
-</li>
-<li>
-<p><span >out</span></p>
-</li>
-<li>
-<p><span >err</span></p>
-</li>
-</ul>
-<p><span >&nbsp;</span></p>
-<p><span ><strong>in</strong> refers to the standard input (keyboard)</span></p>
-<p><span ><strong>out</strong> refers to the standard output (monitor) for general messages</span></p>
-<p><span ><strong>err</strong> refers to the standard error (monitor) for error messages</span></p>
-<p><span >&nbsp;</span></p>
-<p><span ><strong>in</strong> is a static object of <strong>InputStream </strong>class from <strong>java.io</strong> package</span></p>
-<p><span ><strong>out</strong> and <strong>err</strong> are a static objects of <strong>PrintStream </strong>class from <strong>java.io</strong> package</span></p>
-<p><span >&nbsp;</span></p>
-<p><span ><strong>Methods of PrintStream class</strong></span></p>
-<p><span >&nbsp;</span></p>
-<ul>
-<li>
-<p><span >print()</span></p>
-</li>
-<li>
-<p><span >println()</span></p>
-</li>
-<li>
-<p><span >printf()</span></p>
-</li>
-</ul>
-<p><span >&nbsp;</span></p>
-<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table style="width:94%;"><tr><td><pre style="margin: 0; line-height: 125%"> 1
+                            <div style="margin-left: 2%; margin-top: 2%;">
+                                <h2>
+                                    <span style="text-decoration: underline; font-size: x-large;">
+                                        <span style="color: #00ccff; text-decoration: underline;">
+                                            <strong>जावा और C++ में अंतर</strong>
+                                        </span>
+                                    </span>
+                                </h2>
+                                <p>&nbsp;</p>
+                                <div class="table-responsive">
+                                    <table class="table-bordered" style="border-color: blue; background-color: pink; width:94%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">C++</td>
+                                                <td style="text-align: center;">जावा</td>
+                                            </tr>
+                                            <tr>
+                                                <td>यह पलेटफोर्म डिपेंडेंट होती है।</td>
+                                                <td>यह पलेटफोर्म डिपेंडेंट नहीं होती है।</td>
+                                            </tr>
+                                            <tr>
+                                                <td>इसमें सिर्फ कंपाइलर का उपयोग होता है</td>
+                                                <td>इसमें कंपाइलर और इंटरप्रेटर दोनों का प्रयोग होता है</td>
+                                            </tr>
+                                            <tr>
+                                                <td>इसमें स्ट्रकचर (structure), यूनियन (union) और टेंपलेट (templates) होती है
+                                                </td>
+                                                <td>इसमें स्ट्रकचर (structure), यूनियन (union) और टेंपलेट (templates) नहीं होते।</td>
+                                            </tr>
+                                            <tr>
+                                                <td>यह ऑपरेटर और मेथड ओवरलोडिंग दोनों का समर्थन करता है</td>
+                                                <td>यह सिर्फ मेथड ऑवलोडिंग को स्पोर्ट करती है</td>
+                                            </tr>
+                                            <tr>
+                                                <td>इसमें पॉइंटर (pointers) का उपयोग होता है </td>
+                                                <td>इसमें पोइंटर का सीधे समर्थन नहीं होता । इसमें पोइंटर का इस्तेमाल पहली क्लास
+                                                    की भाषा की अवधारणा (First Class Language Concept) की तरह नहीं होता बल्कि
+                                                    जावा का संदर्भ के विवरण को बढ़ाने के लिए होता है।</td>
+                                            </tr>
+                                            <tr>
+                                                <td>इसके पास थ्रेड के लिए कोई बुल्ट-इन समर्थन नहीं होता (मल्टीथ्रेडिंग)</td>
+                                                <td>यह मल्टीथ्रेडींग को स्पोर्ट करती है</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ये कई इनहेरिटेन्स को स्पोरट करती है, क्लासिक डायमंड जैसी दिक्कतों के लिए
+                                                    वर्चुअल क्लास कोन्स्पट (virtual classes concept) का इस्तेमाल करें।</td>
+                                                <td>यह विभिन्न (multiple) इनहेरिटेन्स का समर्थन नहीं करती। यह (multiple) विभिन्न
+                                                    इनहेरिटेन्स के नियम को लागू करने के लिए इंटरफेस का प्रयोग करती है।</td>
+                                            </tr>
+                                            <tr>
+                                                <td>इसमें स्कोप रेजोल्यूशन ऑपरेटर [Scope Resolution Operator(::)] और डिस्ट्रकटर
+                                                    होता है।</td>
+                                                <td>इसमें कोई भी स्कोप रेसोल्यूशन ऑपरेटर और डिस्ट्रकटर नहीं होता।.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>इसमें स्पष्ट स्मृति प्रबंधन (Explicit Memory Management) की आवश्यकता होती
+                                                    है।
+                                                </td>
+                                                <td>इसमें कचरा स्वत: ही संग्रह हो जाता है।</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h2>
+                                    <span style="text-decoration: underline; font-size: x-large;">
+                                        <span style="color: #00ccff; text-decoration: underline;">
+                                            <strong>जावा क्या है ?</strong>
+                                        </span>
+                                    </span>
+                                </h2>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span>जावा एक ऑबजेक्ट ऑरिएंटड और मंच से स्वतंत्र (प्लैटफोर्म इंडिपेडेंट) भाषा है जो कि जानकारी
+                                        प्राप्त करने के लिए यूसर को वैब सरवर, डाटाबेस और सूचना प्रदाता से जोड़ती है।</span>.</p>
+                                <p>&nbsp;</p>
+                                <div>
+                                    <h2>
+                                        <span style="text-decoration: underline; font-family: arial black,avant garde; font-size: x-large; color: #00ccff;">
+                                            <strong>जावा का इतिहास</strong>
+                                        </span>
+                                    </h2>
+                                    <p>&nbsp;</p>
+                                    <p>
+                                        <span>1991 में, पैट्रिक नोटेनन और जेम्स गोसलिंग ने मिलकर सन इंजीनियर्स का ग्रुप बनाया।
+                                            वे अत्यधिक क्रियाशील और सशक्त प्रोग्रामिंग भाषा बनाना चाहते थे जो कि केबल TV,
+                                            स्विच बोक्सों आदि के लिए भी इस्तेमाल की जा सके।</span>
+                                    </p>
+                                    <p>
+                                        <span>जेम्स ने इस भाषा का नाम - "Oak" रखा था। लेकिन बाद में सन इंजीनियरों को एहसास हुआ
+                                            कि Oak नाम की कम्पूयटर भाषा पहले से मौजूद है, इसलिए उन्होंने इसका नाम जावा रख
+                                            दिया। 1994 में, सन इंजीनियरों ने एक शानदार ब्राउज़र बनाने के बारे में सोचा। जावा
+                                            की ताकत दिखाने वाले इस ब्राउज़र को होटजावा लिखा जाता है जिसको अब एप्लेट कहते
+                                            हैं। यह तकनीक 23 मई 1995 को सनवर्ल्ड में दिखाई गई थी। 1996 की शुरूआत में इन सन
+                                            इंजीनियरों ने जावा का पहला संस्करण लांच किया था।</span>
+                                    </p>
+                                </div>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <h2>
+                                    <span style="text-decoration: underline; font-size: x-large; color: #00ccff;">
+                                        <em>यह 4 कोर तकनीकों में बंटी हुई है</em>
+                                    </span>
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span>डेस्कटोप और कॉन्सोल पर आधारित एप्लीकेशनों को बनाने के लिए -जावा स्टैंडर्ड एडीशन
+                                                (जावा एस ई) [Java Standard Edition (Java SE)]
+                                                <br />
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>सरवर साइड एप्लीकेशन, मल्टी टिअर्ड और वेब-आधारित एप्लीकेशनों को बनाने के लिए -
+                                                जावा एंटरप्राइज़ एडीशन (जावा ई ई) [Java Enterprise Edition (Java EE)]
+                                                <br />
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>सैल-फोन, व्यक्तिगत डिजिटल सहायक जैसी माइक्रो-डिवाइसों को बनाने के लिए - जावा
+                                                माइक्रो एडीशन (जावा एम ई) [Java Micro Edition (Java ME)]
+                                                <br />
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>जावा एफ एक्स [Java Fx]</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <h2>
+                                    <span style="color: #00ccff; font-size: x-large;">
+                                        <strong>
+                                            <span style="text-decoration: underline;">Software आवश्यकतायें</span>
+                                        </strong>
+                                    </span>
+                                </h2>
+                                <p>&nbsp;</p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            <span>जावा डेवल्पमेंट किट (जे डी के) [JDK]</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>जावा रनटाइम एनवायरमेंट (जे आर ई) [JRE]</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>इंटरग्रेटेड डैवल्पमेंट एनवायरमेंट (आइ डी ई) [IDE]</span>
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <p>
+                                                    <span>नेटबीन्स NetBeans</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>एक्लीप्स Eclipse</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>विज़ुअल ऐज़ Visual Age</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>जे डैवल्पर JDeveloper</span>
+                                                </p>
+                                                <p>
+                                                    <span>&nbsp;</span>
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <p>&nbsp;</p>
+                                    </li>
+                                </ol>
+                                <h2>
+                                    <span style="text-decoration: underline;">
+                                        <span style="font-size: x-large; color: #00ccff; text-decoration: underline;">
+                                            <strong> जावा रनटाइम एनवायरमेंट (जे आर ई) [JRE] </strong>
+                                        </span>
+                                    </span>
+                                </h2>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span> इसमें जावा डैवलमैंट किट (जे डी के), डैवल्पमेंट टूल और एप्लीकेशन प्रोग्रामिंग (ए पी आई)
+                                        शामिल है।</span>
+                                </p>
+                                <p>एप्लीकेशन प्रोग्रामिंग इंटरफेस (ए पी आइ); क्लास, विधि और पैकेज की फोर्म में मिलने वाले इंटरफेस
+                                    का समूह है। </p>
+                                <p>=&gt; APPLICATION PROGRAMMING PACKAGES एप्लीकेशन प्रोग्रामिंग पैकेज:</p>
+                                <ul>
+                                    <li>java.lang – इसमें जावा प्रोगाम को डिजाइन करने वाली जरूरी क्लासें शामिल होती हैं।</li>
+                                    <li>java.util – इसमें क्लेकशन क्लास, स्कैनर क्लास, तारीख और समय की क्लास जैसी उपयोगी क्लासें
+                                        शामिल हैं।</li>
+                                    <li>java.io – इसमें सिस्टम के इनपुट और आउटपुट के लिए क्लासेस शामिल हैं।</li>
+                                </ul>
+                                <p>=&gt; एप्लेट और नेटवर्किंग प्रोग्रामिंग पैकेज</p>
+                                <ul>
+                                    <li>java.awt – इसमें यूज़र इंटरफेस और पेंटिंग ग्राफिक और तस्वीरें शामिल हैं।</li>
+                                    <li>java.applet – इसमें एप्लेट को बनाने के लिए जरूरी क्लासे शामिल हैं।</li>
+                                    <li>java.net – इसमें जावा की नेटवर्किंग को बढ़ाने वाली क्लासे शामिल हैं।</li>
+                                </ul>
+                                <p>=&gt; DATABASE CONNECTIVITY PACKAGES डाटाबेस क्नेक्टीविटी पैकेज</p>
+                                <ul>
+                                    <li>java.sql – इसमें क्लासें और डाटाबेस के साथ कनेक्शन बनाने वाले इंटरफेस और बनाने, बनाये
+                                        रखने और संशोधित करने वाले डाटाबेस शामिल है।</li>
+                                    <li>javax.sql - JDBC ऑप्शनल पैकेज।</li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span style="text-decoration: underline;">
+                                        <span style="font-size: x-large; color: #00ccff; text-decoration: underline;">
+                                            <strong>जावा डैवल्पमेंट किट (जे डी के) [JDK] </strong>
+                                        </span>
+                                    </span>
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span> JDK, जावा प्रोग्राम को बनाने और चलाने का एक संग्रह है। JDK में आगे दिये गये डैवल्पमेंट
+                                        टूल शामिल हैं :-</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <strong>java </strong>
+                                        </span> =&gt; यह एक जावा का दुभाषिया है। यह बाइटेकोड (bytecode) फाइलों को पढ़ता और इंटरप्रेट
+                                        करता है।</li>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <strong>javac</strong>
+                                        </span> =&gt; यह एक जावा कंपाइलर है। यह सोर्स कोड को बाइटेकोड फाइलों में बदलता है। </li>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <strong>javacdoc</strong>
+                                        </span> =&gt; यह जावा फाइलों के लिए HTML डोक्यूमेंटेशन बनाता है।</li>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <strong>appletviewer</strong>
+                                        </span> =&gt; यह एप्लेट को चलाने के लिए प्रयोग किया जाता है।</li>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <strong>javah</strong>
+                                        </span> =&gt; यह नैटिव हैडर को लिखने के लिए सी हैडर और स्टब जेनरेटर की तरह काम करता है।</li>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <strong>jdb</strong>
+                                        </span> =&gt; यह जावा डिबगर है। यह जावा प्रोग्राम में गलतियों को ढूँढ़ता है।</li>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <strong>javap</strong>
+                                        </span> =&gt;यह जावा डिसैंबल है। यह बाइटेकोड फाइलों को जावा प्रोगराम में बदलता है।</li>
+                                    <li>
+                                        <span style="text-decoration: underline;">
+                                            <em>
+                                                <strong>jar</strong>
+                                            </em>
+                                        </span> =&gt; यह जावा आर्चीव है। यह पैकेज, सिंगल एक्जूक्यूटेबल जार फाइलों को पैकेज रिलेटेड
+                                        क्लास लाइब्रेरी से संबंधित है और उन्हें संभालता है।</li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <p>हम जानते हैं कि कंपाइलर, हाइ लैंग्वेज को मशीन लैंग्वेज में बदलता है।</p>
+                                <p>लेकिन जावा, कंपाइलर सोर्स कोड को इंटरमीडिएट कोड में बदलता है जिसे बाइटेकोड कहते हैं। हम कह
+                                    सकते हैं बाइटेकोड, जावा वर्चुअल मशीन के लिए एक मशीन लैंग्वेज है। बाइटेकोड कोई विशिष्ट
+                                    मशीन (अलग ऑपरेटिंग सिस्टम) नहीं है।. </p>
+                                <p>जावा का इंटरप्रेटर को मशीन स्पेसिफिक कोड बनाने के लिए इस्तेमाल करते हैं। </p>
+                                <h2>
+                                    <span style="text-decoration: underline;">
+                                        <span style="font-size: x-large; color: #00ccff; text-decoration: underline;">
+                                            <strong> JAVA VIRTUAL MACHINE { जावा वर्चुअल मशीन }(JVM) </strong>
+                                        </span>
+                                    </span>
+                                </h2>
+                                <p>JVM एक एबस्ट्रैक्ट कंप्यूटिंग मशीन है जोकि असल में जावा प्रोग्रामों को एक्जिक्यूट करती है।</p>
+                                <p>क्लासलोडर JRE का हिस्सा है जोकि JVM में क्लासों को डालता है।</p>
+                                <p>&nbsp;</p>
+                                <p>नोटः JRE, JDK और JVM प्लेटफोर्म डिपेंडेन्ट हैं क्योंकि हर ओपरेटिंग सिस्टम का कन्फरीग्यूशन
+                                    अलग होता है लेकिन जावा प्लेटफोर्म डिपेडेंट नहीं है क्योंकि सोर्स कोड बाइटेकोड फाइल में
+                                    बदला जाता है जिसकी जानकारी के साथ कंप्यूटर आर्कीटेक्चर कुछ नहीं कर सकता।</p>
+                                <p>&nbsp;</p>
+                                <img src="/img/jvm-min.JPG" class="img-responsive" />
+
+
+
+
+
+
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>&nbsp;</p>
+                                <h2>
+                                    <span style="text-decoration: underline; color: #00ccff;">
+                                        <span style="font-size: x-large;">
+                                            <strong>Writing first Java Program, पहला जावा प्रोग्राम लिखें</strong>
+                                        </span>
+                                    </span>
+                                </h2>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span>एक जावा प्रोग्राम की एक्सटेन्शन
+                                                <strong>.java</strong> होनी चाहिए</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>हर जावा प्रोग्राम में क्लास कीवर्ड सेट होना चाहिए</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span>class &lt;ClassName&gt;</span>
+                                </p>
+                                <p>
+                                    <span>{</span>
+                                </p>
+                                <p>
+                                    <span>//members</span>
+                                </p>
+                                <p>
+                                    <span>}</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span>To execute a class it must have an entry point main() (क्लास को एग्जिक्यूट करने
+                                                के लिए प्रवेश बिंदु जरूर होना चाहिए)</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <span>public static void main(String args[])</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>public static void main(String&hellip; args)</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h2>
+                                    <span style="text-decoration: underline;">
+                                        <span style="font-size: x-large; color: #00ccff;">
+                                            <strong>Syntactical Rules of Java (जावा के वाक्य नियम)</strong>
+                                        </span>
+                                    </span>
+                                </h2>
+                                <p>&nbsp;</p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span>सभी कीवर्डों और पैकेजों का नाम अंग्रेजी के छोटे अक्षरों में होना चाहिए</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>सभी क्लास और इंटरफेस का नाम अंग्रेजी के बड़े अक्षरों में होना चाहिए</p>
+                                        <p>उदाहरणतः</p>
+                                        <ul>
+                                            <li>
+
+                                                <p>
+                                                    <span>Math</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>String</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>BufferedReader</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>InputStreamReader</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>सभी फील्ड और मेथड अंग्रेजी के छोटे अक्षरों में लिखना चाहिए</span>
+                                        </p>
+                                        <p>For e.g.</p>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <span>length()</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>readLine()</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>substring()</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span>println()</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <h2>
+                                    <span style="font-size: x-large; font-family: arial black,avant garde; color: #00ccff;">
+                                        <strong>जावा में इनपुट/आउटपुट</strong>
+                                    </span>
+                                </h2>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span>जावा, सिस्टम क्लास (class) के अंदर बने बनाये स्टैटिक ऑबजेक्ट (static object ) प्रदान
+                                        करती है</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span>in</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>out</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>err</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>
+                                        <strong>in </strong> स्टैंडर्ड इनपुट (कीबोर्ड) से को दर्शाता है</span>
+                                </p>
+                                <p>
+                                    <span>
+                                        <strong>out</strong> सामान्य संदेशों के लिए स्टैंडर्ड आउटपुट (मॉनीटर) को दर्शाता है</span>
+                                </p>
+                                <p>
+                                    <span>
+                                        <strong>err</strong> गलती होने पर संदेश देने के लिए स्टैंडर्ड एरर (मॉनीटर) को दर्शाता है</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>
+                                        <strong>in</strong> पैकेज से InputStream क्लास का स्टैटिक ऑबजेक्ट है</span>
+                                </p>
+                                <p>
+                                    <span>
+                                        <strong>out</strong> and
+                                        <strong>err</strong> की क्लास PrintStream के स्टैटिक ऑबजेक्ट हैं</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>
+                                        <strong>Methods of PrintStream class</strong>
+                                    </span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <span>print()</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>println()</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>printf()</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <!-- HTML generated using hilite.me -->
+                                <div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                    <table style="width:94%;">
+                                        <tr>
+                                            <td>
+                                                <pre style="margin: 0; line-height: 125%"> 1
  2
  3
  4
@@ -464,7 +842,10 @@ font-size:185%;
  9
 10
 11
-12</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #60a0b0; font-style: italic">//First.java</span>
+12</pre>
+                                            </td>
+                                            <td>
+                                                <pre style="margin: 0; line-height: 125%"><span style="color: #60a0b0; font-style: italic">//First.java</span>
 
 <span style="color: #007020; font-weight: bold">class</span> <span style="color: #0e84b5; font-weight: bold">Test</span> <span style="color: #666666">{</span>
 <span style="color: #007020; font-weight: bold">public</span> <span style="color: #007020; font-weight: bold">static</span> <span style="color: #902000">void</span> <span style="color: #06287e">main</span><span style="color: #666666">(</span>String<span style="color: #666666">...</span> args<span style="color: #666666">){</span>
@@ -476,104 +857,168 @@ System<span style="color: #666666">.</span><span style="color: #4070a0">out</spa
 <span style="color: #60a0b0; font-style: italic">// Remember printf in C ?</span>
    <span style="color: #666666">}</span>
 <span style="color: #666666">}</span>
-</pre></td></tr></table></div>
+</pre>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
 
-<p>&nbsp;Note:  The ellipses in 'String... args' denote optional parameter &nbsp;</p>
-<p><span style="text-decoration: underline;"><span style="font-size: x-large; color: #00ccff;"><strong>Compiling a program</strong></span></span></p>
-<p>&nbsp;</p>
-<p><span >JAVAC &lt;programname.java&gt;</span></p>
-<p><span >&nbsp;</span></p>
-<p><span >Example</span></p>
-<p><span >JAVAC First.java  Test.class</span></p>
-<p><span style="text-decoration: underline;"><span style="color: #00ccff; font-size: x-large;"><strong>Running a class</strong></span></span></p>
-<p>&nbsp;</p>
-<p><span >JAVA Test</span></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span style="text-decoration: underline; font-size: x-large; font-family: arial black,avant garde;"><span style="color: #00ccff;"><strong>What is PATH?</strong></span></span></p>
-<p>&nbsp;</p>
-<p><span >An environmental variable to manage list of folders to lookup executable files (.exe, .com and .bat).</span></p>
-<p><span >&nbsp;</span></p>
-<p><span >To add a folder temporarily from command prompt issue the following command</span></p>
-<p><span >&nbsp;</span></p>
-<p><span >PATH=%PATH%;C:\Program Files\Java\jdk1.8.0\bin</span></p>
-<p><span >&nbsp;</span></p>
-<p><span >To make the permanent PATH setting use</span></p>
-<p><span >&nbsp;</span></p>
-<p><span >My Computer -&gt; Properties -&gt; Advanced -&gt; Environmental Variables -&gt; System Variables -&gt;Path -&gt; Edit</span></p>
-<p><span >&nbsp;</span></p>
-<p><span >Paste the path of your BIN after a semicolon</span></p>
-<p>You can also set path using IDE e.g. In a IDE called STS(Spring Tool Suite) path can be set </p>
-</div>	   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-   <br>
-         
-           <div class="container">
-            <div class="row">
-             <div class="col-md-6 col-xs-6">
-            
-         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                <p>&nbsp;Note: The ellipses in 'String... args' denote optional parameter &nbsp;</p>
+                                <p>
+                                    <span style="text-decoration: underline;">
+                                        <span style="font-size: x-large; color: #00ccff;">
+                                            <strong>प्रोग्राम को कंपाइल करना</strong>
+                                        </span>
+                                    </span>
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span>JAVAC &lt;programname.java&gt;</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>उदाहरण</span>
+                                </p>
+                                <p>
+                                    <span>JAVAC First.java Test.class</span>
+                                </p>
+                                <p>
+                                    <span style="text-decoration: underline;">
+                                        <span style="color: #00ccff; font-size: x-large;">
+                                            <strong>क्लास को रन करना</strong>
+                                        </span>
+                                    </span>
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span>JAVA Test</span>
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span style="text-decoration: underline; font-size: x-large; font-family: arial black,avant garde;">
+                                        <span style="color: #00ccff;">
+                                            <strong>पाथ क्या है?</strong>
+                                        </span>
+                                    </span>
+                                </p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    <span>एग्जिक्यूटेबल फाइलों (.exe, .com and .bat) के फोल्डरों की लिस्ट को संभालने के लिए परिवेशी
+                                        वेरिएबल.</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>कमांड प्रोम्पट मसलों से अस्थाई रूप से फोल्डर बनाने के लिए नीचे दी गई कंमाड का प्रयोग
+                                        करें</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>PATH=%PATH%;C:\Program Files\Java\jdk1.8.0\bin</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>स्थाई PATH बनाने के लिए ये सैटिंग उपयोग करो</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>My Computer -&gt; Properties -&gt; Advanced -&gt; Environmental Variables -&gt; System
+                                        Variables -&gt;Path -&gt; Edit</span>
+                                </p>
+                                <p>
+                                    <span>&nbsp;</span>
+                                </p>
+                                <p>
+                                    <span>सेमिकोलन (;) के बाद अपने बिन के पाथ को पेस्ट करें</span>
+                                </p>
+                                <p>आप IDE को इस्तेमाल करते हुए पाथ सैट कर सकते हैं उदाहरणतः IDE में STS (स्प्रिंग टूल सूट) पाथ
+                                    सैट किया जा सकता है
+                                </p>
+                            </div>
 
-          
-           
-            <a class="btn btn-primary" href="http://javajust.com/index_hi.html" role="button">PREVIOUS</a>
-             </div>
-          <div class="col-md-6 col-xs-6 text-center " >    
-<!-- Indicates a successful or positive action -->
 
- <a class="btn btn-success" href="http://javajust.com/data-type-literals_hi.html"  role="button">NEXT</a>
-             </div>
+
+
+
+
+
+                            <br>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6">
+
+                                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+
+
+
+                                        <a class="btn btn-primary" href="http://javajust.com/index_hi.html" role="button">पीछे</a>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 text-center ">
+                                        <!-- Indicates a successful or positive action -->
+
+                                        <a class="btn btn-success" href="http://javajust.com/data-type-literals_hi.html" role="button">आगे</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>  
 
 
-            </div>
+            <!-- content ends -->
         </div>
+        <!--/#content.col-md-0-->
     </div>
-</div>
-
-
-    <!-- content ends -->
-    </div><!--/#content.col-md-0-->
-</div><!--/fluid-row-->
-
-
-
-   
+    <!--/fluid-row-->
 
 
 
 
-<!-- external javascript -->
-
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- library for cookie management -->
-<script src="js/jquery.cookie.js"></script>
 
 
 
-<!-- history.js for cross-browser state change on ajax -->
-<script src="js/jquery.history.js"></script>
-<!-- application script for Charisma demo -->
-<script src="js/charisma.js"></script>
+
+    <!-- external javascript -->
+
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- library for cookie management -->
+    <script src="js/jquery.cookie.js"></script>
+
+
+
+    <!-- history.js for cross-browser state change on ajax -->
+    <script src="js/jquery.history.js"></script>
+    <!-- application script for Charisma demo -->
+    <script src="js/charisma.js"></script>
 
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-46662696-2', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-46662696-2', 'auto');
+        ga('send', 'pageview');
 
-</script>
- 
+    </script>
+
 </body>
+
 </html>
